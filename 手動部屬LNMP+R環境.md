@@ -23,8 +23,15 @@ lsb_release -a
 
     sudo service nginx restart
     
-## 下載MySQL
+## 下載MySQL 並使用 phpmyadmin
 
     sudo apt-get install mysql-server phpmyadmin
 
 - 由於我們安裝phpmyadmin，它會叫我們選擇Apache 或是Lighthttp 為服務器，但使用NGINX為我們的WebService，所以請按Tab 然後OK 跳到下一步。
+- 接下來會進入dbconfig-common 提示，為phpMyAdmin設定使用者密碼以及內部資料庫，你可以按Yes， 如果按下No，它會隨機給你一組密碼。
+
+## 讓Nginx 找到phpMyAdmin 檔案
+
+- 為了讓NGINX設定找到phpMyAdmin，我們必須在Nginx根目錄創造 安裝文件
+
+    sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
