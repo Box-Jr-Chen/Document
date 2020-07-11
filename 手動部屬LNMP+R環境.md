@@ -148,6 +148,7 @@ ingo.php
     composer create-project --prefer-dist laravel/laravel (project_name)
     
 - 遇到問題: Your requirements could not be resolved to an installable set of packages
+
   解决办法：直接忽略版本就是了
 
     composer install --ignore-platform-reqs 
@@ -155,11 +156,13 @@ ingo.php
     composer update --ignore-platform-reqs
 
 - 遇到問題2 : laravel.log could not be opened?
+
  在新建的laravel 專案中，開放storage權限
     
     chmod -R 777 storage
     
 - 遇到問題3 : No application encryption key has been specified.
+
   執行以下指令即可
   
       php artisan key:generate
