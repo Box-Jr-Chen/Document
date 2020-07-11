@@ -16,4 +16,9 @@ vagrant ssh 登入虛擬環境
 
   目前遇到狀況，vagrant init 以後先不進行修改，執行vagrant up 先啟動虛擬機並執行環境，之後在修改Vagrantfile 
 
+  BOX配置:
+  config.vm.box = "generic/ubuntu1804" 
+  
+  對應實體機器的IP位置:
+  config.vm.network "forwarded_port", guest: 80, host: 80, host_ip: "127.0.0.1"
   
