@@ -28,10 +28,19 @@ lsb_release -a
     sudo apt-get  install mysql-server -y
     
     
-如果安裝時沒有設定密碼，可以透過
+如果安裝時沒有設定密碼，可以輸入以下指令進入配置
 
     sudo vim /etc/mysql/debian.cnf
     
-進入配置    
+此檔案開啟後可以很快速的看到 MySQL 預設的用戶名稱和密碼，最最重要的是用戶名的不是 root，
+而是debian-sys-maint。    
+要進入MySQL服務的話使用以下指令，中間部分是要填入你本機中 MySQL 的用戶名。
 
+    mysql -u debian-sys-maint -p
 
+進入mysql以後透過以下指令修改root 的密碼
+
+    use mysql;
+    UPDATE user SET plugin='mysql_native_password' WHERE User='root'
+    UPDATE mysql.user SET authentication_string=PASSWORD('xxxx') WHERE USER='root';FLUSH PRIVILEGES;
+   
