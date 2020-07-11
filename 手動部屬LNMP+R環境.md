@@ -168,3 +168,53 @@ ingo.php
       php artisan key:generate
    
    
+## 安裝Redis 
+
+    sudo apt install redis-server
+    
+- 遇到問題1 : redis-server.service: Failed with result 'timeout'.   
+
+到   /etc/redis/redis.conf
+  
+把bind 127.0.0.1 ::1改为bind 127.0.0.1
+  
+重新安裝 redis-server 即可
+  
+重新加載redis
+  
+    sudo service redis restart
+    
+查看 Redis 的运行状态：
+
+    sudo systemctl status redis
+    
+启动 redis 服务
+
+    sudo service redis start
+    
+##     補充redis 客户端连接
+
+在命令行中输入如下命令来登陆进 redis 客户端
+
+    redis-cli    
+    
+##    redis 远程连接
+打开配置文件
+
+    sudo vi /etc/redis/redis.conf
+    
+将 bind 127.0.0.1 ::1 改为 bind 0.0.0.0
+
+之后重新启动 redis
+
+
+##     補充 Redis 设置密码
+
+打开 Redis 的配置文件
+
+    sudo vi /etc/redis/redis.conf
+    
+找到下面这一行
+# requirepass foobared 
+将注释符号去掉，将后面修改成自己的密码，如:
+requirepass 123456
