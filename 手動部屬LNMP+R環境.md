@@ -18,3 +18,13 @@ lsb_release -a
 ### 安裝Nginx
 
     sudo apt-get install nginx 
+    
+### 啟動Nginx    
+
+    sudo service nginx restart
+    
+## 下載MySQL
+
+    sudo apt-get install mysql-server phpmyadmin
+
+    由於我們安裝phpmyadmin，它會叫我們選擇Apache 或是Lighthttp 為服務器，但使用NGINX為我們的WebService，所以請按Tab 然後OK 跳到下一步。
