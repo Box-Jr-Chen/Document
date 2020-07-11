@@ -7,14 +7,14 @@ lsb_release -a
 
 ### 先安裝 apt 套件管理系統
 
-sudo apt install software-properties-common
+    sudo apt install software-properties-common
 
 ### 下載NGIGX
 
 - 首先加入Nginx源
 
-sudo add-apt-repository ppa:ondrej/nginx
+    sudo add-apt-repository ppa:ondrej/nginx
 
 - 安裝Nginx
 
-sudo apt-get install nginx
+    sudo apt-get install nginx
