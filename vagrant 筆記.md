@@ -9,4 +9,7 @@ vagrant halt 關閉虛擬機
 
 vagrant destroy 刪除虛擬環境
 
+vagrant ssh 登入虛擬環境
+  - 再按下exit 離開虛擬環境
+
 ### Vagrantfile
