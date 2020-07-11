@@ -215,6 +215,6 @@ ingo.php
     sudo vi /etc/redis/redis.conf
     
 找到下面这一行
-# requirepass foobared 
+#requirepass foobared 
 将注释符号去掉，将后面修改成自己的密码，如:
 requirepass 123456
