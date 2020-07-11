@@ -8,3 +8,5 @@ vagrant up 啟動虛擬機 在vagrant cloud 下載box
 vagrant halt 關閉虛擬機
 
 vagrant destroy 刪除虛擬環境
+
+### Vagrantfile
