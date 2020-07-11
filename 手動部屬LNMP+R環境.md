@@ -9,7 +9,7 @@ lsb_release -a
 
     sudo apt install software-properties-common
 
-### 下載NGIGX
+## 下載NGIGX
 
 ### 首先加入Nginx源
 
