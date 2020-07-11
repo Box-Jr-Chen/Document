@@ -59,5 +59,6 @@ lsb_release -a
     
 
 到php.ini 裡面更改 cgi.fix_pathinfo 為 0
+先到根目錄 再到
 
     sudo vim /etc/php/7.4/fpm/php.ini
