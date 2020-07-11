@@ -62,3 +62,54 @@ lsb_release -a
 先到根目錄 再到
 
     sudo vim /etc/php/7.4/fpm/php.ini
+    
+(vagrant ssh 使用vim 發現無法修改儲存  轉換使用vscode 改 並將文件增加寫入權限)
+增加權限 
+
+    sudo chmod 766 /etc/php/7.4/fpm/php.ini
+    
+結束後重啟php-fpm
+
+    sudo service php7.4-fpm restart
+    
+修改檔案： /etc/nginx/sites-available/default
+
+    sudo vim /etc/nginx/sites-available/default
+    
+增加權限： /etc/nginx/sites-available/default    
+
+    sudo chmod 766 /etc/nginx/sites-available/default
+    
+以下為修改內容:
+
+    server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        root /var/www/html;
+        index index.php index.html index.htm index.nginx-debian.html;
+
+ 
+        server_name _;
+        location / {
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+        location ~ \.php$ {
+                try_files $uri =404;
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+ 
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+        }
+
+        location ~ /\.ht {
+                deny all;
+        }
+
+    }
+    
+重啟nginx
+
+    sudo service nginx restart
