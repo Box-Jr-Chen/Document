@@ -11,10 +11,10 @@ lsb_release -a
 
 ### 下載NGIGX
 
-- 首先加入Nginx源
+### 首先加入Nginx源
 
     sudo add-apt-repository ppa:ondrej/nginx 
 
-- 安裝Nginx
+### 安裝Nginx
 
     sudo apt-get install nginx 
