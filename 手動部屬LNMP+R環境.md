@@ -13,8 +13,8 @@ lsb_release -a
 
 - 首先加入Nginx源
 
-    sudo add-apt-repository ppa:ondrej/nginx
+    sudo add-apt-repository ppa:ondrej/nginx 
 
 - 安裝Nginx
 
-    sudo apt-get install nginx
+    sudo apt-get install nginx 
