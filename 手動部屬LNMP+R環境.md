@@ -1,6 +1,5 @@
-# 手動部屬LNMP +R 環境
+# 手動部屬LNMP +R 環境 (Ubuntu 18.04)
 
-# 目標環境 Ubuntu 18.04
 
 可用以下指令檢查Ubuntu版本
 
