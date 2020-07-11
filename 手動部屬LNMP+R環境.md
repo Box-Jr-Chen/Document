@@ -201,7 +201,7 @@ ingo.php
 ##    redis 远程连接
 打开配置文件
 
-    sudo vi /etc/redis/redis.conf
+    sudo vim /etc/redis/redis.conf
     
 将 bind 127.0.0.1 ::1 改为 bind 0.0.0.0
 
@@ -212,7 +212,7 @@ ingo.php
 
 打开 Redis 的配置文件
 
-    sudo vi /etc/redis/redis.conf
+    sudo vim /etc/redis/redis.conf
     
 找到下面这一行
 
