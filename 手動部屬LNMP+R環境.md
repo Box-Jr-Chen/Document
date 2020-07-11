@@ -113,3 +113,55 @@ lsb_release -a
 重啟nginx
 
     sudo service nginx restart
+
+
+開啟/var/www/html 權限，並新增info.php
+
+    sudo chmod 777 /var/www/html
+    
+ingo.php
+
+    <?php
+       phpinfo();
+    ?>
+    
+## 安裝Composer 
+
+先確保是否安裝必要文件
+
+    sudo apt update
+    sudo apt install wget php-cli php-zip unzip
+    
+ 安裝   composer
+ 
+    sudo apt-get install composer
+另一種安裝   composer   
+
+    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+    
+用以下指令檢查版本
+
+    composer --version
+    
+## 開啟 laravel 新專案
+
+    composer create-project --prefer-dist laravel/laravel (project_name)
+    
+- 遇到問題: Your requirements could not be resolved to an installable set of packages
+  解决办法：直接忽略版本就是了
+
+    composer install --ignore-platform-reqs 
+    或者 
+    composer update --ignore-platform-reqs
+
+- 遇到問題2 : laravel.log could not be opened?
+ 在新建的laravel 專案中，開放storage權限
+    
+    chmod -R 777 storage
+    
+- 遇到問題3 : No application encryption key has been specified.
+  執行以下指令即可
+  
+      php artisan key:generate
+   
+   
