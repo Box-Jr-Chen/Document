@@ -44,3 +44,11 @@ lsb_release -a
     UPDATE user SET plugin='mysql_native_password' WHERE User='root'
     UPDATE mysql.user SET authentication_string=PASSWORD('xxxx') WHERE USER='root';FLUSH PRIVILEGES;
    
+## 安裝PHP
+加入PHP源
+
+      sudo add-apt-repository ppa:ondrej/php
+
+先更新
+
+     sudo apt-get update
