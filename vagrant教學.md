@@ -1,6 +1,6 @@
 # Vagrant 筆記
-----------------------------------------
-# Vagrant 指令
+
+## Vagrant 指令
 
 vagrant init xxx/xxx  
 可初始化簡單的範本 ，並設定需要的box
