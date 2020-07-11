@@ -47,8 +47,17 @@ lsb_release -a
 ## 安裝PHP
 加入PHP源
 
-      sudo add-apt-repository ppa:ondrej/php
+     sudo add-apt-repository ppa:ondrej/php
 
 先更新
 
      sudo apt-get update
+
+安裝php 以及plugin
+
+    sudo apt-get install php-fpm php-cli php-mysql php-gd php-tidy php-xmlrpc
+    
+
+到php.ini 裡面更改 cgi.fix_pathinfo 為 0
+
+    sudo vim /etc/php/7.4/fpm/php.ini
