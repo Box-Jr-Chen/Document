@@ -2,8 +2,8 @@
 
 ### 系統更新
 
-   sudo apt update
+    sudo apt update
    
-   sudo apt upgrade
+    sudo apt upgrade
    
-   sudo apt autoremove
+    sudo apt autoremove
