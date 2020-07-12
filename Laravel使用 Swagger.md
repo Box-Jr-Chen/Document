@@ -88,3 +88,6 @@ class TestController extends Controller
 網址:
 
 	http://127.0.0.1:(port)/api/documentation
+
+參考網址:
+https://codefactory.searchmymarket.com/install-swagger-in-laravel/
