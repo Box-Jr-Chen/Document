@@ -60,3 +60,31 @@ class TestController extends Controller
 	}
 }
 ```
+
+在routes\api.php 新增一個 api
+
+	Route::get('/testing/{mytest}','TestingController@index');
+	
+在Controller.php 加入根註釋
+
+	/**
+	 * @SWG\Swagger(
+	 *     basePath="",
+	 *     schemes={"http", "https"},
+	 *     host=L5_SWAGGER_CONST_HOST,
+	 *     @SWG\Info(
+	 *         version="1.0.0",
+	 *         title="這是測試 API",
+	 *         description="這是測試  API description",
+	 *         @SWG\Contact(
+	 *             email="your-email@domain.com"
+	 *         ),
+	 *     )
+	 * )
+	 */
+	 
+
+使用 `php artisan serve` 測試
+網址:
+
+	http://127.0.0.1:(port)/api/documentation
