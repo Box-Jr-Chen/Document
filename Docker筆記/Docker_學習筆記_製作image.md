@@ -1,4 +1,4 @@
-# 製作Image
+# 製作Image，並使用DockerHub做編譯使用
 
 - 目標Ubuntu18.04
 - 製作Node.js應用環境
