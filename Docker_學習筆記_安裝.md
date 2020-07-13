@@ -1,0 +1,72 @@
+# Docker 基本學習筆記
+
+目標為Ubuntu18.04
+
+### 系統更新
+
+    sudo apt update
+   
+    sudo apt upgrade
+   
+    sudo apt autoremove
+
+
+可使用:
+     
+    SUDO cat > up
+     
+建立up文件，然後三種更新指令複製上去，使用:
+    
+     ./up
+     
+去執行文件命令。
+     
+    
+### 安裝系統依賴包
+
+    sudo apt-get install \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        gnupg-agent \
+        software-properties-common
+        
+### 加入Docker信息庫密鑰
+
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
+    
+key確認
+
+    apt-key list
+    
+### 最後8位作為fingerprint參數
+
+    sudo apt-key fingerprint 0EBFCD88
+    
+### 將Docker信息庫加入本地信息庫當中
+
+    sudo add-apt-repository \
+       "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+       $(lsb_release -cs) \
+       stable"
+       
+查看信息庫加入的位置和內容
+
+    cat /etc/apt/sources.list|grep docker
+    
+### 系統再更新
+
+    sudo apt update
+    sudo apt upgrade
+    
+### Docker安裝
+
+    apt show docker-ce
+    sudo apt install docker-ce docker-ce-cli containerd.io
+    
+### 校驗安裝
+
+    docker help
+    docker version
+    sudo docker run hello-world
