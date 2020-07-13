@@ -4,7 +4,7 @@
 - 製作Node.js應用環境
 
 
-###應用技術
+### 應用技術
 
 - Node.js
 
@@ -16,7 +16,7 @@
 
 - Docker Hub
 
-###1. 建立GitHub 庫
+### 1. 建立GitHub 庫
 
 - [DockerNodejsGitHub路徑](https://github.com/Box-Jr-Chen/Docker_tutorial_nodejs)
 
