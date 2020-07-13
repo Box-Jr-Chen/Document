@@ -44,3 +44,30 @@
     sudo docker image pull node:8.16.1
     
 再用`sudo docker image ls`指令查看，可在本地看到node 的image
+
+`ll` 為github根目錄
+
+
+### 3. 測試建立Nodejs環境
+
+編寫一個nodejs應用
+    
+      nano helo.js
+      
+寫入以下測試文字
+    
+      console.log("This is a demo!!") 
+      
+      
+編寫Dockerfile()      
+   
+       nano Dockerfile 
+       
+大小寫不能錯
+
+並在Dockerfile裡面寫入以下指令:
+
+      FROM node:8.16.1
+      RUN mkdir /src
+      COPY helo.js /src
+      CMD ["node", "src/helo.js"]
