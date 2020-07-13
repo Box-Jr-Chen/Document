@@ -85,4 +85,5 @@
       sudo docker image build -t box621863/docker_tutorial_nodejs:v01 .
       
 `-t`為標籤，他後面是標簽名，`v01`為子標籤，後面還有個`.`不能忘記，它的意思以我當前目錄為根目錄進行建立(注意: 不能大寫) 
+
 剛剛因為下載node 故此建立會非常快，如果沒有下載，他會先從DockerHub上先下載
