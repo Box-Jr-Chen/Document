@@ -1,6 +1,6 @@
-### 固定方法 position_fixed
+# 固定方法 position_fixed
 
-# navbar固定上側
+### navbar固定上側
 
 	.navbar{
 	    height: xxxx rem;
@@ -11,7 +11,7 @@
 	    z-index: 99;
 	}
 
-# bar固定左側
+### bar固定左側
 
 	.bar{
 	    height: 100%;
