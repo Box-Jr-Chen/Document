@@ -59,11 +59,10 @@
       console.log("This is a demo!!") 
       
       
-編寫Dockerfile()      
+編寫Dockerfile，文件名稱大小寫不能寫錯    
    
        nano Dockerfile 
        
-大小寫不能錯
 
 並在Dockerfile裡面寫入以下指令:
 
