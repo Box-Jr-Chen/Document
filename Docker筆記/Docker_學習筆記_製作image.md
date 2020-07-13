@@ -48,7 +48,7 @@
 `ll` 為github根目錄
 
 
-### 3. 測試建立Nodejs環境
+### 3. 測試建立Nodejs鏡像環境
 
 編寫一個nodejs應用
     
@@ -80,10 +80,44 @@
 `CMD ["node", "src/helo.js"]`  使用CMD指令執行src/helo.js,
 
 
-- 編譯運行環境
+- 編譯鏡像
 
       sudo docker image build -t box621863/docker_tutorial_nodejs:v01 .
       
 `-t`為標籤，他後面是標簽名，`v01`為子標籤，後面還有個`.`不能忘記，它的意思以我當前目錄為根目錄進行建立(注意: 不能大寫) 
 
 剛剛因為下載node 故此建立會非常快，如果沒有下載，他會先從DockerHub上先下載
+
+再用`sudo docker image ls`可以看到我們剛剛建立的鏡像`box621863/docker_tutorial_nodejs`
+
+- 運行鏡像
+
+      sudo docker container run  box621863/docker_tutorial_nodejs:v01
+      
+如果出現剛剛測試文字，代表運行成功。 
+
+`container` 將鏡像實例化
+
+### 4. 提交到GitHub
+
+      git add .
+
+      git commit -m "first upload"
+      
+      git push
+      
+      git tag v01
+      
+      git tag
+      
+      git push origin v01
+      
+### 5. 使用DockerHub進行雲編譯  
+
+- 必須申請一個帳號
+
+- 按下Repositories 建立儲存
+
+- 與github 連接，並選擇建立好的Docker_tutorial_nodejs
+
+- 按下Create 建立
