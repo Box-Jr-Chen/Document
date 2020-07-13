@@ -2,7 +2,7 @@
 
 ### css筆記
 
-- [固定方法_position_fixed](./Docker筆記/固定方法_position_fixed.md)
+- [固定方法_position_fixed](./css筆記/固定方法_position_fixed.md)
 
 ### Docker筆記
 
