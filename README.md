@@ -6,11 +6,11 @@
 
 ### PHP筆記
 
-- [Laravel使用Swagger](./PHP筆記/Laravel使用 Swagger.md)
+- [Laravel使用Swagger](./PHP筆記/Laravel使用Swagger.md)
 
 ### vagrant筆記
 
-- [vagrant基本認識](./vagrant筆記/vagrant 基本認識.md)
+- [vagrant基本認識](./vagrant筆記/vagrant基本認識.md)
 
 - [VSCodeVagrantSSH ](./vagrant筆記/VSCodeVagrantSSH遠端連結.md)
 
