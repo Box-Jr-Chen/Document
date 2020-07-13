@@ -78,3 +78,10 @@
 `COPY helo.js /src` 把本地的helo.js複製到虛擬環境裡資料夾src,
 
 `CMD ["node", "src/helo.js"]`  使用CMD指令執行src/helo.js,
+
+
+- 編譯運行環境
+
+      sudo docker image build -t box621863/docker_tutorial_nodejs:v01 .
+      
+`-t`為標籤，他後面是標簽名，`v01`為子標籤，後面還有個`.`不能忘記，它的意思以我當前目錄為根目錄進行建立(注意: 不能大寫) 
