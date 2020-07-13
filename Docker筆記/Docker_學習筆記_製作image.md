@@ -118,6 +118,29 @@
 
 - 按下Repositories 建立儲存
 
-- 與github 連接，並選擇建立好的Docker_tutorial_nodejs
+- 與github 連接，並選擇建立好的Docker_tutorial_nodejs 儲存庫
 
 - 按下Create 建立
+
+- 之後Builds 裡面點選Build configurations
+
+- 在 BUILD RULES 新增一個欄位，並填入
+  
+  Source Type  Source   Docker Tag
+  Tag          v01      v01 
+  
+- 按下Save 儲存  
+
+- 在Automated Builds 底下的選項，點選Trigger 建立
+
+- 編譯好了以後在Tag 上會看到新的標籤，代表編譯成功可以使用
+
+### 6. 使用剛打包的鏡項運行環境
+
+取的剛剛建立的鏡像
+   
+      sudo docker image pull box621863/demo_first_nodejs:v01
+
+測試剛剛建立的鏡像
+
+      sudo docker container run box621863/demo_first_nodejs:v01
