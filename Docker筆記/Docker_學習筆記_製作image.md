@@ -70,3 +70,8 @@
       RUN mkdir /src
       COPY helo.js /src
       CMD ["node", "src/helo.js"]
+
+`FROM node:8.16.1`  意指從node:8.16.1 這個映像建立起虛擬環境
+`RUN mkdir /src`    建立以後在虛擬環境裡建立資料夾src
+`COPY helo.js /src` 把本地的helo.js複製到虛擬環境裡資料夾src
+`CMD ["node", "src/helo.js"]`  使用CMD指令執行src/helo.js
