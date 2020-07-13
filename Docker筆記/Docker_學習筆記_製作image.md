@@ -32,3 +32,15 @@
 進入 Docker_tutorial_nodejs
 
     cd Docker_tutorial_nodejs
+
+### 2. 從DockerHub取得Node6.16.1版本
+
+用以下指令可查看本地有的image文件
+
+    sudo docker image ls
+
+從dockerHub 下載node:8.16.1
+
+    sudo docker image pull node:8.16.1
+    
+再用`sudo docker image ls`指令查看，可在本地看到node 的image
