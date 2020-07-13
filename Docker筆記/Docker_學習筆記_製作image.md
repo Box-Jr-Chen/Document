@@ -20,3 +20,15 @@
 
 - [DockerNodejsGitHub路徑](https://github.com/Box-Jr-Chen/Docker_tutorial_nodejs)
 
+本地建立資料夾
+   
+    mkdir mydocker
+    cd mydocker/
+    
+把GitHub 庫拷貝下來
+
+    git clone https://github.com/(youraccount)/Docker_tutorial_nodejs
+    
+進入 Docker_tutorial_nodejs
+
+    cd Docker_tutorial_nodejs
