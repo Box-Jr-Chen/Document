@@ -3,6 +3,7 @@
 ### css筆記
 
 - [固定方法_position_fixed](./css筆記/固定方法_position_fixed.md)
+- [background使用](./css筆記/background使用.md)
 
 ### Docker筆記
 
