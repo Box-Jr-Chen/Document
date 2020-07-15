@@ -15,7 +15,9 @@
 ### PHP筆記
 
 - [Laravel使用Swagger](./PHP筆記/Laravel使用Swagger.md)
-
+- [正則表達式紀錄](./PHP筆記/正則表達式紀錄.md)
+- [語法_查詢紀錄](./PHP筆記/語法_查詢紀錄.md)
+- [語法紀錄](./PHP筆記/語法紀錄.md)
 ### vagrant筆記
 
 - [vagrant基本認識](./vagrant筆記/vagrant基本認識.md)
