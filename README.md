@@ -2,9 +2,9 @@
 
 ### css筆記
 
-- [固定方法_position_fixed](./css筆記/固定方法_position_fixed.md)
+- [position:fixed固定方法](./css筆記/固定方法_position_fixed.md)
 - [background使用](./css筆記/background使用.md)
-- [自定義scrollbar](./css筆記/自定義scrollbar.md)
+- [scrollbar自定義](./css筆記/自定義scrollbar.md)
 
 ### Docker筆記
 - [Docker指令](./Docker筆記/0.Docker_學習筆記_指令.md)
