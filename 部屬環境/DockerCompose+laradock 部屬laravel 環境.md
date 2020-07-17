@@ -115,8 +115,13 @@ Docker 修改 Nginx 設定
 使用root 登入失敗!
 
 Laradock數據緩存問題，刪除Laradock中mysql的數據，重新構建即可：
+
 關閉服務docker-compose down
+
 刪除Laradock中mysql的數據rm -rf〜/ .laradock / data / mysql
+
 這裡會刪除數據庫中的所有數據，如果需要，請先備份數據庫
+
 重新構建mysql docker-compose構建mysql
+
 重新啟動服務docker-組成nginx mysql phpmyadmin
