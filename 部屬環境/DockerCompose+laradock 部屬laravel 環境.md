@@ -56,8 +56,8 @@ Laradock是一個基於docker的PHP開發環境。使用Laradock可以很快的�
     MYSQL_PORT=3307
     MYSQL_ROOT_PASSWORD=root
  
-Docker 修改 Nginx 設定
-複製example 到xxxx.conf
+# Docker 修改 Nginx 設定
+ 複製example 到xxxx.conf
 
     cp -r nginx/sites/laravel.conf.example nginx/sites/laravel.test.conf
     nano nginx/sites/laravel.test.conf
@@ -66,7 +66,7 @@ Docker 修改 Nginx 設定
 
     root /var/www/public
     
-執行Container  mginx + mysql +phpmyadmin  
+# 執行Container  mginx + mysql +phpmyadmin  
 
     sudo docker-compose up -d nginx mysql phpmyadmin
     
@@ -111,8 +111,9 @@ Docker 修改 Nginx 設定
     docker-compose exec workspace bash
     php artisan migrate
     
-訪問 phpMyAdmin:
-使用root 登入失敗!
+# 訪問 phpMyAdmin:
+
+*使用root 登入phpMyAdmin失敗!
 
 Laradock數據緩存問題，刪除Laradock中mysql的數據，重新構建即可：
 
