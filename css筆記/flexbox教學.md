@@ -262,3 +262,55 @@ CSS：
     }
     
 ![align-content](./asset/align-content.jpg) 
+
+
+- flex-wrap
+
+在剛剛的範例看到一個 flex-wrap 的屬性，這個屬性負責的是讓內容的元素換行，
+
+因為當我們把父元素的 display 設定為 flex 或 inline-flex 的時候，
+
+子元素就是以單行的方式，彈性撐滿父元素，所以就要利用 flex-wrap 來換行，共有三個設定值。
+
+    nowrap：預設值，單行
+    wrap：多行
+    wrap-reverse：多行，但內容元素反轉
+
+CSS：
+
+    .nowrap,
+    .wrap,
+    .wrap-reverse{
+        display:inline-flex;
+        flex-wrap:wrap;
+        width:180px;
+        height:80px;
+        margin:5px 5px 40px;
+        border:1px solid #000;
+        vertical-align: top;
+    }
+    .column{
+        flex-direction:column;
+        width:120px;
+        height:180px;
+    }
+    .nowrap{
+        flex-wrap:nowrap;
+    }
+    .wrap{
+        flex-wrap:wrap;
+    }
+    .wrap-reverse{
+        flex-wrap:wrap-reverse;
+    }
+    .align-content div{
+        width:30px;
+        height:30px;
+        margin:5px;
+        background:#069;
+    }
+    .column div{
+        background:#f50;
+    }
+    
+![flex-wrap](./asset/flex-wrap.jpg)     
