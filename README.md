@@ -12,6 +12,11 @@
 - [Docker製作鏡像](./Docker筆記/2.Docker_學習筆記_製作image.md)
 - [指定默認的命令](./Docker筆記/3.Docker_學習筆記_指定默認的命令ENTRYPOINT.md)
 - [建立Nginx服務器](./Docker筆記/4.Docker_學習筆記_建立Nginx服務器.md)
+- [搭建python環境](./Docker筆記/5.Docker_學習筆記_搭建python環境.md)
+- [構建PostgreSQL服務器](./Docker筆記/6.構建PostgreSQL服務器.md)
+- [pgadmin4管理PostgreSql](./Docker筆記/7.使用pgadmin4管理PostgreSql.md)
+- [DockerCompose基本使用](./Docker筆記/8.DockerCompose基本使用.md)
+- [dockercompose部署Flask+Redis](./Docker筆記/9.dockercompose部署Flask+Redis.md)
 ### PHP筆記
 
 - [Laravel使用Swagger](./PHP筆記/Laravel使用Swagger.md)
