@@ -15,20 +15,20 @@ flex 的盒子模型如下圖所呈現，與一般的盒子模型不同的地方
 ### Flexbox 屬性介紹
  Flexbox的屬性可參考 W3C css3 flexbox css3-flexbox：
 
-    display
+    1.display
     
-    flex-direction
+    2.flex-direction
     
-    justify-content
+    3.justify-content
     
-    align-items
+    4.align-items
     
-    align-self
+    5.align-self
     
-    align-content
+    6.align-content
     
-    flex-wrap
+    7.flex-wrap
     
-    order
+    8.order
     
-    flex
+    9.flex
