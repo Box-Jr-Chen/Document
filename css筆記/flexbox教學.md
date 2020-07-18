@@ -314,3 +314,47 @@ CSS：
     }
     
 ![flex-wrap](./asset/flex-wrap.jpg)     
+
+
+- order
+
+剛剛在 flex-wrap 的屬性裏頭看到了可以把元素反轉，
+
+order 這個屬性更是可以直接指定一個數字，
+
+就可以由小到大的排列順序。
+
+     .item{
+         width:50px;
+         height:60px;
+         text-align: center;
+         line-height: 50px;
+     }
+     .order1{
+         order:1;
+         background:#c00;
+     }
+     .order2{
+         order:2;
+         background:#069;
+     }
+     .order3{
+         order:3;
+         background:#095;
+     }
+     .order4{
+         order:4;
+         background:#f50;
+     }
+     .order5{
+         order:5;
+         background:#777;
+     }
+     .order6{
+         order:6;
+         background:#077;
+     }
+     
+     
+![order](./asset/order.jpg)     
+
