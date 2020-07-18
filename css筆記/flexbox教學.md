@@ -40,7 +40,13 @@ flex 的盒子模型如下圖所呈現，與一般的盒子模型不同的地方
 
 - display
 
-display 是我們熟知的 CSS 屬性，對於 Flexbox 來說，多了有兩種方式可以設定，預設為「flex」，其布局方式與 block 幾乎類似，都會強迫換行，但設定display:flex的子元素卻具備了更多彈性的設定，此外另外一種方式則是「inline-flex」，和 inline-block 也是幾乎雷同，意義上都是一個display:flex的元素外面包覆display:inline的屬性，在後方的元素不會換行。( 範例：css-flexbox-demo1.html )
+display 對於 Flexbox 來說，多了有兩種方式可以設定，預設為「flex」，其布局方式與 block 幾乎類似，都會強迫換行，
+
+但設定display:flex的子元素卻具備了更多彈性的設定。
+
+另外一種方式則是「inline-flex」，和 inline-block 也是幾乎雷同，
+
+意義上都是一個display:flex的元素外面包覆display:inline的屬性，在後方的元素不會換行。
 
 CSS：
 
