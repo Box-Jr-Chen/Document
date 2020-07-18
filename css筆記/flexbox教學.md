@@ -66,3 +66,30 @@ flex 的盒子模型如下圖所呈現，與一般的盒子模型不同的地方
 
 
   ![display](./asset/display.jpg)
+
+
+- flex-direction
+
+   flex-direction 表示 Flexbox 內容元素的「排列方向」，分別有下列四種。
+
+   row：預設值，由左到右，從上到下
+   row-reverse：與 row 相反
+   column：從上到下，再由左到右
+   column-reverse：與 column 相反
+
+CSS：
+
+    .flex-row{
+        flex-direction:row;
+    }
+    .flex-row-reverse{
+        flex-direction:row-reverse;
+    }
+    .flex-column{
+        flex-direction:column;
+    }
+    .flex-column-reverse{
+        flex-direction:column-reverse;
+    }  
+    
+   ![flex-direction](./asset/flex-direction.jpg)   
