@@ -93,3 +93,42 @@ CSS：
     }  
     
    ![flex-direction](./asset/flex-direction.jpg)   
+
+
+- justify-content
+
+
+  justify-content 決定了內容元素與整個 Flexbox 的「水平對齊」位置，
+  
+  回想一下最上面講的 Flexbox 盒子模型，具有 main start 與 main end 左右兩個端點，
+  
+  justify-content 就是按照這個方式做設定，而其中的設定值總共有下列五個。
+
+  flex-start：預設值，對齊最左邊的 main start
+  
+  flex-end：對齊最左邊的 main end
+  
+  center：水平置中
+  
+  space-between：平均分配內容元素，左右元素將會與 main start 和 main end 貼齊
+  
+  space-around：平均分配內容元素，間距也是平均分配
+  
+
+CSS：
+
+    .flex-start{
+        justify-content:flex-start;
+    }
+    .flex-end{
+        justify-content:flex-end;
+    }
+    .center{
+        justify-content:center;
+    }
+    .space-between{
+        justify-content:space-between;
+    }
+    .space-around{
+        justify-content:space-around;
+    }
