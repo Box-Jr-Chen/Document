@@ -188,13 +188,13 @@ CSS：
 
 - align-self
 
-align-self 的設定與 align-items 相同，
+  align-self 的設定與 align-items 相同，
 
-但目的不同，align-self 的作用在於覆寫已經套用 align-items 的屬性，
+  但目的不同，align-self 的作用在於覆寫已經套用 align-items 的屬性，
 
-如果照我們以前所寫，因為 align-items 是針對子元素，
+  如果照我們以前所寫，因為 align-items 是針對子元素，
 
-所以必須要用 align-self 來進行覆寫，我們直接用上一個範例來修改就很清楚了。
+  所以必須要用 align-self 來進行覆寫，我們直接用上一個範例來修改就很清楚了。
 
 CSS：
 
@@ -203,3 +203,6 @@ CSS：
         line-height: 30px;
         background:#095;
     }
+
+
+![align-self](./asset/align-self.jpg)  
