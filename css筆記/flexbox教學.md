@@ -358,3 +358,62 @@ order 這個屬性更是可以直接指定一個數字，
      
 ![order](./asset/order.jpg)     
 
+- flex
+
+flex 應該是 Flexbox 裏頭最重要的屬性，
+
+而 flex 其實是由三個屬性組合而成，
+
+依照先後順序分別是「flex-grow」、「flex-shrink」和「flex-basis」，
+
+如果 flex 只填了一個數值 ( 無單位 )，那麼預設就是以 flex-grow 的方式呈現，至於三個屬性的解釋如下：
+
+    flex-grow：數字，無單位，當子元素的 flex-basis 長度「小」於它自己在父元素分配到的長度，按照數字做相對應的「伸展」比例分配，預設值為 0，不會進行彈性變化，不可為負值，設為 1 則會進行彈性變化。
+    
+    flex-shrink：數字，無單位，當子元素的 flex-basis 長度「大」於它自己在父元素分配到的長度，按照數字做相對應的「壓縮」比例分配，預設值為 1，設為 0 的話不會進行彈性變化，不可為負值。
+    
+    flex-basis：子元素的基本大小，作為父元素的大小比較基準，預設值為 0，也因為預設值為 0，所以沒有設定此屬性的時候，會以直接採用 flex-grow 屬性，flex-basis 也可以設為 auto，如果設為 auto，就表示子元素以自己的基本大小為單位。
+    
+
+三個屬性可以分開設定，也可以合在一起用一個 flex 統一設定，下面的例子展現出同一個 Flexbox，在不同的寬度，子元素會有不同大小的呈現。
+
+HTML：
+
+    <div class="flex flex-300">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+    </div>
+    <div class="flex flex-150">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+    </div>
+CSS：
+
+    .flex{
+        display:inline-flex;
+        height:60px;
+        margin:5px 5px 40px;
+        border:1px solid #000;
+        vertical-align: top;
+    }
+    .flex-300{
+        width:300px;
+    }
+    .flex-150{
+        width:80px;
+    }
+    .item{
+        height:60px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .item1{
+        flex:1 2 200px;
+        background:#c00;
+    }
+    .item2{
+        flex:2 1 100px;
+        background:#069;
+    }
+
+![flex](./asset/flex.jpg)   
