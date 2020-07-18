@@ -206,3 +206,58 @@ CSS：
 
 
 ![align-self](./asset/align-self.jpg)  
+
+
+- align-content
+
+剛剛談到的 align-items 是針對內容為單行的元素進行處理，
+
+如果遇到多行的元素，就要使用 align-content 這個屬性，這個屬性總共有六個設定值。
+
+    flex-start：對齊最上面的 cross start
+    flex-end：對齊最下面的 cross end
+    center：垂直置中
+    space-between：將第一行與最後一行分別對齊最上方與最下方
+    space-around：每行平均分配間距
+    stretch：預設值，內容元素全部撐開
+    
+CSS：
+
+    .flex-start,
+    .flex-end,
+    .center,
+    .space-between,    
+    .space-around,    
+    .stretch{
+        display:inline-flex;
+        flex-wrap:wrap;
+        width:180px;
+        height:160px;
+        margin:5px 5px 40px;
+        border:1px solid #000;
+        vertical-align: top;
+    }
+    .flex-start{
+        align-content:flex-start;
+    }
+    .flex-end{
+        align-content:flex-end;
+    }
+    .center{
+        align-content:center;
+    }
+    .space-between{
+        align-content:space-between;
+    }
+    .space-around{
+        align-content:space-around;
+    }
+    .stretch{
+        align-content:stretch;
+    }
+    .align-content>div{
+        padding:15px;
+        margin:2px;
+        background:#666;
+    }
+    
