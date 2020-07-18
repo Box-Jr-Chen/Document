@@ -429,6 +429,8 @@ CSS：
         flex:2 1 100px;
         background:#069;
     }
+    
+       
 
 ![flex](./asset/flex.jpg)   
 
@@ -438,3 +440,6 @@ CSS：
 但壓縮的時候卻是藍色變得比紅色長。
 
 ![flex_2](./asset/flex_2.gif) 
+
+
+[參考網址](https://www.oxxostudio.tw/articles/201501/css-flexbox.html)  
