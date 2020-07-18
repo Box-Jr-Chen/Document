@@ -134,3 +134,72 @@ CSS：
     }
 
 ![justify-conten](./asset/justify-content.jpg)  
+
+
+- align-items
+
+align-items 剛好和 justify-content 相反，
+align-items 決定了內容元素與整個 Flexbox 的「垂直對齊」位置，
+最上面講的 Flexbox 盒子模型，具有 cross start 與 cross end 左右兩個端點，
+align-items 與 align-self 就是按照這個方式做設定，
+設定值總共有下列五個。
+
+    flex-start：對齊最上面的 cross start
+    flex-end：對齊最下面的 cross end
+    center：垂直置中
+    stretch：預設值，將內容元素全部撐開至 Flexbox 的高度
+    baseline：以所有內容元素的基線作為對齊標準
+
+CSS：
+
+    .flex-start{
+        align-items:flex-start;
+    }
+    .flex-end{
+        align-items:flex-end;
+    }
+    .center{
+        align-items:center;
+    }
+    .stretch{
+        align-items:stretch;
+    }
+    .baseline{
+        align-items:baseline;
+    }
+    .flex-item{
+        width:60px;
+        text-align:center;
+    }
+    .item1{
+        font-size:20px;
+        line-height: 60px;
+        background:#c00;
+    }
+    .item2{
+        line-height: 30px;
+        background:#095;
+    }
+    .item3{
+        font-size:30px;
+        line-height: 100px;
+        background:#059;
+    }
+
+- align-self
+
+align-self 的設定與 align-items 相同，
+
+但目的不同，align-self 的作用在於覆寫已經套用 align-items 的屬性，
+
+如果照我們以前所寫，因為 align-items 是針對子元素，
+
+所以必須要用 align-self 來進行覆寫，我們直接用上一個範例來修改就很清楚了。
+
+CSS：
+
+    .item2{
+        align-self:baseline;
+        line-height: 30px;
+        background:#095;
+    }
