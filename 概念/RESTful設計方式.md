@@ -159,45 +159,46 @@ CRUD 範例
 
    2. 無狀態。(Stateless) 
    
-   -- 一般 Web 服務中，Server 端和 Client 端交互的資訊，
+      一般 Web 服務中，Server 端和 Client 端交互的資訊，
        
-   會存在 Server 端的 Session (例如：已登入狀態)，在 Client 端再次發送請求的時候，
+      會存在 Server 端的 Session (例如：已登入狀態)，在 Client 端再次發送請求的時候，
        
-   Server 端透過保存在 Server 端的 Session，去執行 request。
+      Server 端透過保存在 Server 端的 Session，去執行 request。
+      
         
-   -- 狀態的意思，即 Client 端自行保存狀態，
+      狀態的意思，即 Client 端自行保存狀態，
      
-   在請求 Server 的時候，一併附上給 Server 端，
+      在請求 Server 的時候，一併附上給 Server 端，
         
-   Server 端無保存 Client 端的狀態資訊。 
+      Server 端無保存 Client 端的狀態資訊。 
        
-   舉一個白話一點的例子：查詢員工工資：
+      舉一個白話一點的例子：查詢員工工資：
        
-   第一步：登錄系統。
+      第一步：登錄系統。
        
-   第二步：進入查詢工資的頁面。
+      第二步：進入查詢工資的頁面。
        
-   第三步：搜索該員工。
+      第三步：搜索該員工。
+        
+      第四步：點擊姓名查看工資。
        
-   第四步：點擊姓名查看工資。
+      這樣的操作流程就是有狀態的，查詢工資的每一個步驟都依賴於前一個步驟，只要前置操作不成功，後續操作就無法執行。
        
-   這樣的操作流程就是有狀態的，查詢工資的每一個步驟都依賴於前一個步驟，只要前置操作不成功，後續操作就無法執行。
+      如果輸入一個URL就可以直接得到指定員工的工資，
        
-   如果輸入一個URL就可以直接得到指定員工的工資，
+      這種情況就是無狀態的，因為獲取工資不依賴於其他資源或狀態，
        
-   這種情況就是無狀態的，因為獲取工資不依賴於其他資源或狀態，
+      這種情況下，員工工資是一個資源，
        
-   這種情況下，員工工資是一個資源，
-       
-   由一個 URL 與之對應可以通過 HTTP 中的 GET 方法得到資源，這就是典型的 RESTful 風格。
+      由一個 URL 與之對應可以通過 HTTP 中的 GET 方法得到資源，這就是典型的 RESTful 風格。
        
    3. 可更高效利用快取來提高回應速度 (Cachable)
    
-   在 client-side，透過 client 端 cache 紀錄 chahe 版本，
+      在 client-side，透過 client 端 cache 紀錄 chahe 版本，
        
-   若向 server 要求資源時發現 server 最新版與 cache 相同，
-       
-   則 client 端直接取用本地資源即可，不需要再做一次查詢
+      若向 server 要求資源時發現 server 最新版與 cache 相同，
+         
+      則 client 端直接取用本地資源即可，不需要再做一次查詢
    
    4. 分層系統架構 (Layered System)
    
