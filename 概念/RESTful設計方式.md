@@ -48,6 +48,22 @@
    2.Verbs 動詞：對資源要做的動作。
 
    3.Content Types 資源呈現方式：API 資源可以以多種方式表現，最常用的是 JSON，較輕，也較好處理。
+   
+   舊設計風格 :
+
+      /getAllUsers
+      /getUser/1
+      /createUser
+      /updateUser/1
+      /deleteUser/1   
+
+   RESTful 設計風格:
+
+      GET /users
+      GET /users/1
+      POST /users
+      PUT /users/1
+      DELETE /users/1
 
 [參考網址](https://charder.readbook.tw/api-design/restful/)
 
