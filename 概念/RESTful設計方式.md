@@ -65,6 +65,14 @@
       PUT /users/1
       DELETE /users/1
 
+   以RESTful API 風格開發的話，就是用一個唯一的 URL 定位資源，將動作藏在 HTTP 的 method 裡面。
+    
+   使用 RESTful 風格設計的 API，就有了以下幾種優點及限制：
+   
+   1. 有唯一的URL表示資源位置，統一的 API 接口。(Uniform Interface)
+
+   2. 無狀態。(Stateless) 
+
 [參考網址](https://charder.readbook.tw/api-design/restful/)
 
 [參考網址-2](https://medium.com/itsems-frontend/api-%E6%98%AF%E4%BB%80%E9%BA%BC-restful-api-%E5%8F%88%E6%98%AF%E4%BB%80%E9%BA%BC-a001a85ab638)
