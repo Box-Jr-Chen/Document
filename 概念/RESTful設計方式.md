@@ -35,7 +35,7 @@
    
    正好會對應到資料庫基本操作 CRUD 增刪查改。
 
-### RESTful
+### RESTful 模式
 
    Representational State Transfer( 表現層狀態轉移)
 
