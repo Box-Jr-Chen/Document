@@ -48,8 +48,13 @@
 - 零星的檔案
 
     .env
+    
     artisan
+    
     composer.json, composer.lock
+    
     gulpfile.js
+    
     package.json
+    
     phpunit.xml
