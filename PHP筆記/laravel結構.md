@@ -20,7 +20,7 @@
 簡化學習曲線
 
 ### 目錄結構
-根目錄
+- 根目錄
 
     app  (主體目錄  controllers、Middleware)
     bootstrap
@@ -36,7 +36,7 @@
     logs
     server.php
     
-app 目錄
+- app 目錄
 
     Console
     Exceptions
@@ -45,7 +45,7 @@ app 目錄
     
 [服務提供者](https://laravel.tw/docs/5.0/providers)
 
-零星的檔案
+- 零星的檔案
 
     .env
     artisan
