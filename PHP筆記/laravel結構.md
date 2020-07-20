@@ -1,7 +1,7 @@
 
 # laravel結構
 
-網站開發常見的元件
+### 網站開發常見的元件
 
   - 身份驗證
   - 輸入驗證
@@ -12,3 +12,52 @@
   - queue
   - 發送 email
   - Cache
+
+### Laravel 的特色
+
+約定大於配置 (convention over configuration)
+
+簡化學習曲線
+
+### 目錄結構
+根目錄
+
+    app
+    bootstrap
+    config
+    app.php
+    database.php
+    mail.php
+    session.php
+    database
+    migrations
+    public
+    resources
+    storage
+    logs
+    tests
+    vendor
+    
+app 目錄
+
+    Console
+    Events
+    Exceptions
+    Http
+    Controller
+    routes.php
+    Jobs
+    Listeners
+    Mail
+    Notifications
+    Policies
+    Providers
+    
+零星的檔案
+
+    .env
+    artisan
+    composer.json, composer.lock
+    gulpfile.js
+    package.json
+    phpunit.xml
