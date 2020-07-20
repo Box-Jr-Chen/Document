@@ -41,8 +41,8 @@ app 目錄
     Console
     Exceptions
     Http
-    Providers
-    
+    Providers(服務提供者)
+        --[服務提供者](https://laravel.tw/docs/5.0/providers)
 零星的檔案
 
     .env
