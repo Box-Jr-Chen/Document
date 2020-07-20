@@ -22,35 +22,25 @@
 ### 目錄結構
 根目錄
 
-    app
+    app  (主體目錄  controllers、Middleware)
     bootstrap
     config
-    app.php
-    database.php
-    mail.php
-    session.php
     database
-    migrations
     public
     resources
+    routes
     storage
-    logs
     tests
     vendor
+    migrations
+    logs
+    server.php
     
 app 目錄
 
     Console
-    Events
     Exceptions
     Http
-    Controller
-    routes.php
-    Jobs
-    Listeners
-    Mail
-    Notifications
-    Policies
     Providers
     
 零星的檔案
