@@ -63,7 +63,7 @@
 
 9.可在`resources\js\components`裡面新增vue子物件。 
 
-- 使用Router
+### 使用Router
 
 1. 執行：
 
