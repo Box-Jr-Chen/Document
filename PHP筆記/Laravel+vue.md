@@ -61,5 +61,7 @@
 
 8.新開TERMINAL並執行`php artisan serve`。
 
+9.可在`resources\js\components`裡面新增vue子物件。 
  
 [參考網址_laravel](https://laravel.com/docs/7.x/frontend#introduction)   
+[免費樣本網址](https://startbootstrap.com/)   
