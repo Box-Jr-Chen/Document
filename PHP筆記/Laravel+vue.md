@@ -62,7 +62,50 @@
 8.新開TERMINAL並執行`php artisan serve`。
 
 9.可在`resources\js\components`裡面新增vue子物件。 
- 
+
+- 使用Router
+
+1. 執行：
+
+     ‵npm install --save vue-route‵
+    
+2. 新增`resources\js\router.js`，並打上：
+
+          import Vue from 'vue';
+          import Router from 'vue-router';
+          import test from './views/test.vue';
+
+          Vue.use(Router);
+
+          const routes= [
+              {
+                  path:'/',
+                  name:'test',
+                  component:test
+              }
+          ];
+
+          const router = new Router({
+              routes:routes
+          });
+
+          export default router;
+
+3. 加到`app.js`：
+
+          import Vue from 'vue';
+          import App from './App.vue';
+          import router from './router';
+          import 'bootstrap/dist/css/bootstrap.css';
+          import 'bootstrap';
+          const app = new Vue({
+              el: '#app',
+              router,
+              render: h => h(App)
+          });
+
+4.執行`npm run watch`
+
 [參考網址_laravel](https://laravel.com/docs/7.x/frontend#introduction)   
 
 [免費樣本網址](https://startbootstrap.com/)   
