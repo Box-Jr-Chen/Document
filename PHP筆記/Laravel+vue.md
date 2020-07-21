@@ -104,7 +104,22 @@
               render: h => h(App)
           });
 
-4.執行`npm run watch`
+4.修改`app.vue`:
+
+          <template>
+              <main>
+                  <router-view ></router-view>
+              </main>
+          </template>
+
+          <script>
+          export default {
+
+          }
+          </script>
+
+
+5.執行`npm run watch`
 
 [參考網址_laravel](https://laravel.com/docs/7.x/frontend#introduction)   
 
