@@ -67,7 +67,7 @@
 
 1. 執行：
 
-     ‵npm install --save vue-route‵
+       npm install --save vue-route
     
 2. 新增`resources\js\router.js`，並打上：
 
