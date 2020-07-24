@@ -30,3 +30,30 @@ GOPATH: 工作的目錄, 儲存專案的目錄是 ~/go
 儲存 .profile 後, 執行以下指令讓設定生效:
 
     source ~/.profile
+
+
+建立第一支 Go 語言的 “Hello World!” 程式, 用文字編譯器建立 hello.go:
+
+    sudo nano hello.go
+    
+加入以下程式碼:
+
+    package main
+    import "fmt"
+
+    func main() {
+         fmt.Println("Hello, World!\n")
+    }  
+    
+    
+接著就執行了, Go 語言不用編譯也可以先執行, 輸入以下指令:
+
+    go run hello.go
+    
+要將程式碼編譯成二進制檔案, 用 build 選項:
+
+    go build hello.go    
+    
+目錄下會產生 hello 檔案, 可以直接執行:
+
+    ./hello
