@@ -1,7 +1,10 @@
 # golang_簡易webAPI
 
 ### golang自带路由
-golang自帶路由庫 http.ServerMux ，實際上是一個 map[string]Handler，是請求的url路徑和該url路徑對於的一個處理函數的映射關係。
+golang自帶路由庫 http.ServerMux ，實際上是一個 map[string]Handler，
+
+是請求的url路徑和該url路徑對於的一個處理函數的映射關係。
+
 這個實現比較簡單，有一些缺點：
 
 - 不支持參數設定，例如/user/:uid 這種泛型類型匹配。
