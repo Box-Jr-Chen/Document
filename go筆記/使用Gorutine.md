@@ -151,3 +151,4 @@ Channel 就像是個佇列，
 
 [參考網址](https://openhome.cc/Gossip/Go/Goroutine.html)
 
+[額外參考網址](https://blog.wu-boy.com/2020/01/when-to-use-go-channel-and-goroutine/)
