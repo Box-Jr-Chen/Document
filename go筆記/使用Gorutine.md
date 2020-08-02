@@ -69,8 +69,7 @@ sync.WaitGroup 可以用來等待一組 Goroutine 的完成，
 
 並使用 Wait 等待 Goroutine 結束，而每個 Goroutine 結束前，必須執行 sync.WaitGroup 的 Done 方法。
 
-package main
-
+    package main
     import (
         "fmt"
         "math/rand"
