@@ -1,4 +1,4 @@
-# Gorutine 和 sync.WaitGroup
+# Gorutine 和 sync.WaitGroup 和 Channel
 
 在函式使用 go 來使用 Gorutine
 
@@ -138,6 +138,16 @@ runtime.GOMAXPROCS() 函式，可以設定 Go 同時間能使用的 CPU 數量�
 Demo:
 
     runtime.GOMAXPROCS(runtime.NumCPU()) 
+
+
+### Channel
+Channel 就像是個佇列，
+
+可以對它發送值，也可以從它上頭取得值，
+
+想要建立一個 Channel，要在型態之前加上個 `chan`，
+
+每個 chan 都要宣告可容納的型態。
 
 [參考網址](https://openhome.cc/Gossip/Go/Goroutine.html)
 
