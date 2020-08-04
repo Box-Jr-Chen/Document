@@ -63,7 +63,7 @@ Channel 就像是個佇列，可以對它發送值，也可以從它上頭取得
     
 使用 goal <- 發送資料至 Channel 時，若 Channel 中已有資料，也會發生阻斷，直到該資料被取走為止。
 
-#　Buffered Channel
+# 使用　Buffered Channel
 
     package main
 
