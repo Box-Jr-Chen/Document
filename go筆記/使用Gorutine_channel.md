@@ -61,6 +61,7 @@ Channel 就像是個佇列，可以對它發送值，也可以從它上頭取得
     
 若 Channel 中無法取得資料，這時會發生阻斷，直到可從 Channel 中取得字串為止。
     
+   
 使用 goal <- 發送資料至 Channel 時，若 Channel 中已有資料，也會發生阻斷，直到該資料被取走為止。
 
 # 使用　Buffered Channel
@@ -95,3 +96,49 @@ Channel 中預設只能容納一個資料，你可以在建立 Channel 時指定
 
 在這個程式中，建立的 Channel 的容量為 2，因此在 Channel 的容量未滿前，發送數據至 Channel 並不會發生阻斷。
 
+
+# close 與 range
+
+
+    package main
+    import (
+        "fmt"
+        "math/rand"
+        "time"
+    )
+    func random(min, max int) int {
+        rand.Seed(time.Now().Unix())
+        return rand.Intn(max-min) + min
+    }
+
+    func guess(n int, ch chan int) {
+        for {
+            number := random(1, 10)
+            ch <- number
+            if number == n {
+                close(ch)
+            }
+            time.Sleep(time.Second)
+        }
+    }
+
+    func main() {
+        ch := make(chan int)
+
+        go guess(5, ch)
+
+        for i := range ch {
+            fmt.Println(i)
+        }
+
+        fmt.Println("I hit 5....Orz")
+    }
+    
+    
+每次猜測的數字，都會使用 ch <- number 傳至 Channel 中，
+
+而最後猜中數字時，使用 close() 關閉 Channel，
+
+Go 的 range 可以搭配 Channel 使用，
+
+在 Channel 尚未關閉前，搭配 for 就可以持續從 Channel 中取出資料。
