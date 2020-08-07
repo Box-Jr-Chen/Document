@@ -309,4 +309,7 @@ Go 的 range 可以搭配 Channel 使用，
 
 如果你真的不想要透過 Channel，而想要直接共用某些資料結構，就必須注意有無 Race condition的問題，
 
-若必要，可透過鎖定資源的方式來避免相關問題，有關鎖定的方式，可以參考` sync.Mutex `的使用。
+若必要，可透過鎖定資源的方式來避免相關問題，有關鎖定的方式，可以參考`sync.Mutex`的使用。
+
+
+-[sync.Mutex](https://tour.golang.org/concurrency/9)
