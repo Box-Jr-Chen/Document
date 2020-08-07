@@ -142,3 +142,171 @@ Channel 中預設只能容納一個資料，你可以在建立 Channel 時指定
 Go 的 range 可以搭配 Channel 使用，
 
 在 Channel 尚未關閉前，搭配 for 就可以持續從 Channel 中取出資料。
+
+# select
+
+如果有多個 Channel 需要協調，可以使用 select，
+
+以下來看個多個生產者與一個消費者的例子：
+
+    package main
+    import "fmt"
+    func producer(clerk chan int) {
+        fmt.Println("生產者開始生產整數......")
+        for product := 1; product <= 10; product++ {
+            clerk <- product
+            fmt.Printf("生產了 (%d)\n", product)
+        }
+    }
+
+    func consumer(clerk1 chan int, clerk2 chan int) {
+        fmt.Println("消費者開始消耗整數......")
+        for i := 1; i <= 20; i++ {
+            select {
+            case p1 := <-clerk1:
+                fmt.Printf("消費了生產者一的 (%d)\n", p1)
+            case p2 := <-clerk2:
+                fmt.Printf("消費了生產者二的 (%d)\n", p2)
+            }
+
+        }
+    }
+
+    func main() {
+        clerk1 := make(chan int)
+        clerk2 := make(chan int)
+
+        go producer(clerk1)
+        go producer(clerk2)
+
+        consumer(clerk1, clerk2)
+    }
+
+
+在 select 的 case 中，
+
+會監看哪個 Channel 可以取得資料（或發送資料至 Channel），
+如果都有資料的話，就會隨機選取，
+
+如果都無法取得資料（或發送資料至 Channel）就會發生 panic，
+這可以設置 default 來解決，
+
+也就是監看的 Channel 中都沒有資料的話就會執行，
+
+- 利用 select 來做些超時設定。
+
+
+    package main
+
+    import (
+        "fmt"
+        "math/rand"
+        "time"
+    )
+
+    func random(min, max int) int {
+        rand.Seed(time.Now().Unix())
+        return rand.Intn(max-min) + min
+    }
+
+    func producer(clerk chan int) {
+        fmt.Println("生產者開始生產整數......")
+        for product := 1; product <= 10; product++ {
+            time.After(time.Duration(random(1, 5)) * time.Second)
+            clerk <- product
+            fmt.Printf("生產了 (%d)\n", product)
+        }
+    }
+
+    func consumer(clerk1 chan int, clerk2 chan int) {
+        fmt.Println("消費者開始消耗整數......")
+        for i := 1; i <= 20; i++ {
+            select {
+            case p1 := <-clerk1:
+                fmt.Printf("消費了生產者一的 (%d)\n", p1)
+            case p2 := <-clerk2:
+                fmt.Printf("消費了生產者二的 (%d)\n", p2)
+            case <-time.After(3 * time.Second):
+                fmt.Printf("消費者抱怨中…XD")
+            }
+
+        }
+    }
+
+    func main() {
+        clerk1 := make(chan int)
+        clerk2 := make(chan int)
+
+        go producer(clerk1)
+        go producer(clerk2)
+
+        consumer(clerk1, clerk2)
+    }
+    
+如果過了 3 秒鐘，另兩個 Channel 都還是阻斷，`case <- time.After(3 * time.Second)` 該行就會成立 。
+
+- select 中若有相同的 Channel，會隨機選取。
+
+例如底下會顯示哪個結果是不一定的：
+
+    package main
+
+    import "fmt"
+
+    func main() {
+        ch := make(chan int, 1)
+
+        ch <- 1
+        select {
+        case <-ch:
+            fmt.Println("隨機任務 1")
+        case <-ch:
+            fmt.Println("隨機任務 2")
+        case <-ch:
+            fmt.Println("隨機任務 3")        
+        }
+    }
+    
+# 單向 Channel
+
+可以將 Channel 轉為只可發送或只可取值的 Channel。
+
+    package main
+
+    import "fmt"
+
+    func producer(clerk chan<- int) {
+        fmt.Println("生產者開始生產整數......")
+        for product := 1; product <= 10; product++ {
+            clerk <- product
+            fmt.Printf("生產了 (%d)\n", product)
+        }
+    }
+
+    func consumer(clerk <-chan int) {
+        fmt.Println("消費者開始消耗整數......")
+        for i := 1; i <= 10; i++ {
+            fmt.Printf("消費了 (%d)\n", <-clerk)
+        }
+    }
+
+    func main() {
+        clerk := make(chan int, 2)
+
+        go producer(clerk)
+        consumer(clerk)
+    }  
+    
+    
+`clerk chan<- int` 是只能發送的 Channel，而 `clerk <-chan int` 是只能接收的 Channel，
+
+從一個只能發送的 Channel 接收資料，或者是對一個只能接收的 Channel 發送資料，
+
+都會引發 invalid operation 的錯誤。
+
+
+ 透過 Channel 來作為 Goroutine 間的溝通機制，是 Go 中比較建議的方式，
+
+如果你真的不想要透過 Channel，而想要直接共用某些資料結構，就必須注意有無 Race condition的問題，
+
+若必要，可透過鎖定資源的方式來避免相關問題，有關鎖定的方式，可以參考` sync.Mutex `的使用。
