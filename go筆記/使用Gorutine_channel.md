@@ -145,7 +145,7 @@ Go 的 range 可以搭配 Channel 使用，
 
 # select
 
-如果有多個 Channel 需要協調，可以使用 select，
+1.如果有多個 Channel 需要協調，可以使用 select，
 
 以下來看個多個生產者與一個消費者的例子：
 
@@ -193,7 +193,7 @@ Go 的 range 可以搭配 Channel 使用，
 
 也就是監看的 Channel 中都沒有資料的話就會執行，
 
-- 利用 select 來做些超時設定。
+2.利用 select 來做些超時設定。
 
 
     package main
@@ -245,7 +245,7 @@ Go 的 range 可以搭配 Channel 使用，
     
 如果過了 3 秒鐘，另兩個 Channel 都還是阻斷，`case <- time.After(3 * time.Second)` 該行就會成立 。
 
-- select 中若有相同的 Channel，會隨機選取。
+3. select 中若有相同的 Channel，會隨機選取。
 
 例如底下會顯示哪個結果是不一定的：
 
