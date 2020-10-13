@@ -44,3 +44,30 @@
     end//
 
     call proce_while();
+
+
+    ex: (紀錄)
+    use tms_cloud;
+    drop procedure if exists proce_while;
+    DELIMITER // 
+    create procedure proce_while()
+    begin
+    declare count int;
+    set count = 1;
+    while count <= 120 do
+
+    IF count < 10 Then
+      insert into tms_cloud.warehouse_cnc (num, cnc_cell, cnc_no, id_toolholder, update_date)  values(count,CONCAT('T0',count),1,null,null);
+    ELSEIF count >= 10 and count <= 60   Then
+      insert into tms_cloud.warehouse_cnc (num, cnc_cell, cnc_no, id_toolholder, update_date)  values(count,CONCAT('T',count),1,null,null);
+    ELSEIF  count > 60 and  count < 70 Then
+      insert into tms_cloud.warehouse_cnc (num, cnc_cell, cnc_no, id_toolholder, update_date)  values(count,CONCAT('T0',count-60),2,null,null);
+    ELSEIF count >= 70 Then
+      insert into tms_cloud.warehouse_cnc (num, cnc_cell, cnc_no, id_toolholder, update_date)  values(count,CONCAT('T',count-60),2,null,null);
+
+    END IF;  
+    set count = count + 1;
+    end while;
+    end//
+
+    call proce_while();
