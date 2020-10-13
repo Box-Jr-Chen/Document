@@ -22,7 +22,7 @@
     ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
 
 ### 修改單一column 型態
-    ALTER TABLE tms_cloud.warehouse_cnc MODIFY num INTEGER;
+    ALTER TABLE [database.table] MODIFY [column] INTEGER;
 
 ### 新增外鍵
 
