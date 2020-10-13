@@ -27,3 +27,20 @@
 ### 新增外鍵
 
     https://www.fooish.com/sql/foreign-key-constraint.html
+
+### 新增程序
+
+    use [database];  //先確定哪一個資料庫
+    drop procedure if exists proce_while;
+    DELIMITER // 
+    create procedure proce_while()
+    begin
+    declare count int;
+    set count = 0;
+    while count < 5 do
+    insert into [table] (x, x, x, x, x)  values(x,x,x,x,x);
+    set count = count + 1;
+    end while;
+    end//
+
+    call proce_while();
