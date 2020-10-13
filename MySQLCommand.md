@@ -38,7 +38,7 @@
     declare count int;
     set count = 0;
     while count < 5 do
-    insert into [table] (x, x, x, x, x)  values(x,x,x,x,x);
+    insert into [table] (x, x, x, x, x)  values(count,CONCAT('T',count),x,x,x);
     set count = count + 1;
     end while;
     end//
