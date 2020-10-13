@@ -7,9 +7,11 @@
     //回復
     SET SQL_SAFE_UPDATES=1;
     
-### 將單一column 全部清除
+### 將單一column內的資料全部清除
 
     Update [database.table] set [column]=null;
 
 
+### 新增一個column 在已有的資料表
 
+    ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
