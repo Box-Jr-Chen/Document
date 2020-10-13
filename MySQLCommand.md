@@ -20,7 +20,10 @@
 ### 新增一個column 在已有的資料表
 
     ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
-
+    
+### 修改單一column 名字
+    ALTER TABLE [database.table] RENAME COLUMN [column_old] TO [column];
+    
 ### 修改單一column 型態
     ALTER TABLE [database.table] MODIFY [column] INTEGER;
 
