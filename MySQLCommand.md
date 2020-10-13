@@ -47,6 +47,7 @@
 
 
     ex: (紀錄)
+    
     use tms_cloud;
     drop procedure if exists proce_while;
     DELIMITER // 
