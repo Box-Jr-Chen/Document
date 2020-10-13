@@ -7,6 +7,11 @@
     //回復
     SET SQL_SAFE_UPDATES=1;
     
+### 將table的資料全部清除  
+
+    DELETE FROM [database.table];
+   
+   
 ### 將單一column內的資料全部清除
 
     Update [database.table] set [column]=null;
