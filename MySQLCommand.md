@@ -15,3 +15,7 @@
 ### 新增一個column 在已有的資料表
 
     ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
+
+### 新增外鍵
+
+    https://www.fooish.com/sql/foreign-key-constraint.html
