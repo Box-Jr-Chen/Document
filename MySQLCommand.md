@@ -7,6 +7,8 @@
     //回復
     SET SQL_SAFE_UPDATES=1;
     
+### 將table的名字做修改
+    RENAME TABLE db_a.old_table TO db_b.new_table;
 ### 將table的資料全部清除  
 
     DELETE FROM [database.table];
