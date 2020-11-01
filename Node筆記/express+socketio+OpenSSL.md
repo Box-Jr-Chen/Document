@@ -30,8 +30,8 @@ package.json:
     }
 
 
-### 新增檔案
-1.新增`app.js`
+
+### 新增`app.js`
 
 寫一段測試HTTPS
 
@@ -61,7 +61,7 @@ package.json:
 
 
 
-2. 安裝 OpenSSL
+### 安裝 OpenSSL
 
  -https://www.openssl.org/ (網址)
  -https://slproweb.com/products/Win32OpenSSL.html (window 10 安裝檔)
@@ -73,6 +73,20 @@ package.json:
 
 
 
-3. 創建cert檔案
+### 創建SSL 檔案
 
+1. 新增資料夾
   `mkdir cert`
+
+
+  
+2. 進入cert 資料夾
+
+3.新增私鑰
+  `openssl genrsa -out key.pem`
+  
+4.利用私鑰新增CSR(certificate signing request)  
+    `openssl req -new -key key.pem -out csr.pem`
+    
+5.從CSR創建SSL 證書
+   `openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem`
