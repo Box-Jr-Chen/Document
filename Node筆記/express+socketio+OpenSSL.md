@@ -84,12 +84,12 @@ package.json:
 
 3.新增私鑰
 
-  `openssl genrsa -out key.pem`
+`openssl genrsa -out key.pem`
   
 4.利用私鑰新增CSR(certificate signing request)  
 
-    `openssl req -new -key key.pem -out csr.pem`
+`openssl req -new -key key.pem -out csr.pem`
     
 5.從CSR創建SSL 證書
 
-   `openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem`
+`openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem`
