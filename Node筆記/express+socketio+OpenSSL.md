@@ -98,3 +98,24 @@ package.json:
 
 ### 啟動測試
  `npm start`
+
+
+### 新增 SocketIO
+
+    const socketio = require('socket.io');
+    
+    //sockio
+    const io = socketio(sslServer);
+    
+    //當有人連線
+    io.on('connection',socket =>{
+        console.log('New WS Connection...');
+        
+        //監聽
+      socket.on('joinRoom', ({ username, room }) => {
+      
+        //emit 發送訊息
+         socket.emit('message', formatMessage(user.username, 'Welcome to ChatCord!'));
+      });
+        
+    };
