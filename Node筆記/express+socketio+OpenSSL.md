@@ -50,8 +50,8 @@ package.json:
 
     const sslServer = https.createServer(
         {
-          key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
-          cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
+          key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),  //讀取cert 的key.pem
+          cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),  //讀取cert cert.pem
         },
         app
       )
@@ -93,3 +93,8 @@ package.json:
 5.從CSR創建SSL 證書
 
 `openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem`
+
+
+
+### 啟動測試
+ `npm start`
