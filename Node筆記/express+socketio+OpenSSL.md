@@ -14,7 +14,7 @@ package.json:
       "description": "",
       "main": "index.js",
       "scripts": {
-        "start":"node server",
+        "start": "nodemon app.js",
         "dev":"nodemon server"
       },
       "author": "",
