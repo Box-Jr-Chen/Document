@@ -59,6 +59,8 @@ package.json:
       sslServer.listen(3443, () => console.log('Secure server 🚀🔑 on port 3443'))
     
 
+
+
 2. 安裝 OpenSSL
 
  -https://www.openssl.org/ (網址)
@@ -69,6 +71,8 @@ package.json:
 安裝好後 需要設置環境變數
 
 
-2. 創建cert檔案
+
+
+3. 創建cert檔案
 
   `mkdir cert`
