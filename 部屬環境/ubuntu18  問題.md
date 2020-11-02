@@ -10,6 +10,8 @@
 
 看到執行的PID，然後輸入指令，殺掉正在執行的:
 
-   `sudo kill -9 (PID)  EX:   sudo kill -9 2090`
+   `sudo kill -9 (PID)  
+   
+   ex:   sudo kill -9 2090`
    
 - 參考網址: https://learningsky.io/var-lib-dpkg-lock/   
