@@ -13,6 +13,8 @@
 
     DELETE FROM [database.table];
    
+    //將PK覆規 重新計算
+    alter table [database.table] AUTO_INCREMENT=1; 
    
 ### 將單一column內的資料全部清除
 
@@ -22,6 +24,8 @@
 ### 新增一個column 在已有的資料表
 
     ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
+    
+    
     
 ### 修改單一column 名字
     ALTER TABLE [database.table] RENAME COLUMN [column_old] TO [column];
