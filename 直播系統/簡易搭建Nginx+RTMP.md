@@ -1,4 +1,6 @@
-# 簡易搭建Nginx+RTMP_Windows10
+# 簡易搭建Nginx+RTMP+HLS
+
+### 簡易搭建Nginx+RTMP_Windows10
 
 下載  Nginx Gryphon 版本 
 -- nginx 下載路徑 http://nginx-win.ecsds.eu/download/
