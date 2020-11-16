@@ -9,7 +9,7 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
 
 保證stat.xls的目錄為:
 
-nginx-x.xx.xxx-Gryphon\nginx-rtmp-module\stat.xsl
+`nginx-x.xx.xxx-Gryphon\nginx-rtmp-module\stat.xsl`
 
 開啟conf資料夾找到nginx-win.conf檔案,配置rtmp，
 可以複製改名為nginx.conf。
