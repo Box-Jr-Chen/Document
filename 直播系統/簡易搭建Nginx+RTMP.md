@@ -58,4 +58,5 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
 
 
 打開cmd，透過ffmpeg 將mp4或視訊流轉成h.264 送到rtmp server
-    `ffmpeg -re -i test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://127.0.0.1:1935/live/home`
+
+`ffmpeg -re -i test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://127.0.0.1:1935/live/home`
