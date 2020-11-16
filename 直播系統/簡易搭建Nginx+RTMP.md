@@ -62,3 +62,43 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
 打開cmd，透過ffmpeg 將mp4或視訊流轉成h.264 送到rtmp server
 
 `ffmpeg -re -i test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://127.0.0.1:1935/live/home`
+
+
+
+# 使用VideoJS 讓網頁播放視訊流
+
+由於無法直接透過video 標籤 直接播放視訊流 所以必須要透過Video.js去播放
+
+        <head>
+            <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+            <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+            <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+            <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+          </head>
+
+          <body>
+            <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="1280"
+              height="720"
+              data-setup="{}"
+            >
+              <!-- <source src="test.mp4" type="video/mp4" /> -->
+              <!-- rtmp://127.0.0.1:1935/hls -->
+              <source src="rtmp://127.0.0.1:1935/live/home" type="rtmp/flv" />
+            </video>
+
+            <script>
+            var player = videojs('my-video');
+            videojs('my-video', {techOrder: ['flash', 'html5']});
+            videojs.options.flash.swf = 'video.swf';
+            player.ready(function() {
+            this.play();
+            });
+            </script>
+          </body>
