@@ -19,5 +19,7 @@
 
 
 You have disabled the fileinfo extension from php.
+
 To enable extension, verify that are enabled in the .ini file 
+
 (find/add line "extension=fileinfo" in C:\xampp\php\php.ini). 
