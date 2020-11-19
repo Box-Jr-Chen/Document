@@ -1,6 +1,5 @@
-# 簡易搭建Nginx+RTMP+HLS
+# 設定環境 Nginx+RTMP+Windows10
 
-### 簡易搭建Nginx+RTMP_Windows10
 
 下載  Nginx Gryphon 版本 
 -- nginx 下載路徑 http://nginx-win.ecsds.eu/download/
@@ -12,6 +11,10 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
 保證stat.xls的目錄為:
 
 `nginx-x.xx.xxx-Gryphon\nginx-rtmp-module\stat.xsl`
+
+
+
+# 簡易搭建 Nginx+RTMP
 
 開啟conf資料夾找到nginx-win.conf檔案,配置rtmp，
 可以複製改名為nginx.conf。
@@ -102,3 +105,8 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
             });
             </script>
           </body>
+
+
+# 簡易搭建Nginx+HLS
+
+
