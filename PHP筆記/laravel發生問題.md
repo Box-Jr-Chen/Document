@@ -7,6 +7,7 @@
 解决办法：
 
  cd 到该引用的根目录，删除 composer.lock 文件；
+ 
  重新在根目录执行“composer install”，这样就能重新生成 composer.lock 文件了。
 
 (沒發現檔案，只好直接用下方指令)
