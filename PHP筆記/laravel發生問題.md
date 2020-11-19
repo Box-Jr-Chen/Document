@@ -1,7 +1,7 @@
 # laravel發生問題
 
 
-1.require..../vendor/autoload.php错误的解决办法
+### require..../vendor/autoload.php错误的解决办法
 
 显然，这是核心都没有拖下来的缘故！
 解决办法：
