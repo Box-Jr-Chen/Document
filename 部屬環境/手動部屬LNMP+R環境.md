@@ -130,7 +130,7 @@ ingo.php
 先確保是否安裝必要文件
 
     sudo apt update
-    sudo apt install wget php-cli php-zip unzip
+    sudo apt install wget php-cli php-zip unzip php-curl phpunit  php-mbstring
     
  安裝   composer
  
