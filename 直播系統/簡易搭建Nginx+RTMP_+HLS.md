@@ -193,7 +193,7 @@ nginx-rtmp-module下载地址：https://github.com/arut/nginx-rtmp-module
 
 打開cmd，透過ffmpeg 將mp4或視訊流轉成h.264 送到hls server
 
-`ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -rtbufsize 1024M -pix_fmt yuv420p -vcodec libx264 -s 1280x720 -r 25 -q 10 -ar 44100 -f flv rtmp://127.0.0.1/live_hls/index`
+`ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -rtbufsize 1024M -pix_fmt yuv420p -vcodec libx264 -s 1280x720 -r 25 -q 10 -ar 44100 -f flv rtmp://127.0.0.1/live/index`
 
 HLS 特性:
 
