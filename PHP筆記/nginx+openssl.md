@@ -4,6 +4,7 @@
 # 1.在nginx 的資料夾 創建 ssl 資料檔
 
 linux :
+
 `sudo mkdir /etc/nginx/ssl`
 
 # 2. 使用ssl 創建憑證
