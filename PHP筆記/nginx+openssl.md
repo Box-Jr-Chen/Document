@@ -31,20 +31,20 @@ linux :
 
 # 3. 在conf/nginx.conf 修改
 
-server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
+    server {
+      listen 80 default_server;
+      listen [::]:80 default_server;
 
-  # 加入 SSL 設定
-  listen 443 ssl default_server;
-  listen [::]:443 ssl default_server;
+      # 加入 SSL 設定
+      listen 443 ssl default_server;
+      listen [::]:443 ssl default_server;
 
-  # 憑證與金鑰的路徑
-  ssl_certificate /etc/nginx/ssl/nginx.crt;
-  ssl_certificate_key /etc/nginx/ssl/nginx.key;
+      # 憑證與金鑰的路徑
+      ssl_certificate /etc/nginx/ssl/nginx.crt;
+      ssl_certificate_key /etc/nginx/ssl/nginx.key;
 
-  # ...
-}
+      # ...
+    }
 
 
 # 4. 重新開啟nginx
@@ -60,21 +60,21 @@ server {
 
 如果希望所有的使用者都使用加密的 HTTPS 連線，不要使用沒有加密的 HTTP 的話，可以修改一下 NGINX 的設定，讓所有的 HTTP 的網址自動導向至 HTTPS 的網址。
 
-`server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
+    server {
+      listen 80 default_server;
+      listen [::]:80 default_server;
 
-  # 導向至 HTTPS
-  rewrite ^(.*) https://$host$1 permanent;
-}
-server {
-  # SSL 設定
-  listen 443 ssl default_server;
-  listen [::]:443 ssl default_server;
+      # 導向至 HTTPS
+      rewrite ^(.*) https://$host$1 permanent;
+    }
+    server {
+      # SSL 設定
+      listen 443 ssl default_server;
+      listen [::]:443 ssl default_server;
 
-  # 憑證與金鑰的路徑
-  ssl_certificate /etc/nginx/ssl/nginx.crt;
-  ssl_certificate_key /etc/nginx/ssl/nginx.key;
+      # 憑證與金鑰的路徑
+      ssl_certificate /etc/nginx/ssl/nginx.crt;
+      ssl_certificate_key /etc/nginx/ssl/nginx.key;
 
-  # ...
-}`
+      # ...
+    }
