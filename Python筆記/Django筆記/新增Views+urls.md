@@ -46,12 +46,14 @@
 
 在`views.py`裡面 :
 
+	from django.shortcuts import render, redirect    # redirect導回目的
 	from .forms  import StockCreateForm
 
 	def add_items(request):
 		form = StockCreateForm(request.POST or None)
 		if form.is_valid():
 			form.save()
+			return redirect('/list_items')  # 導回
 		context = {
 			"form": form,
 			"title": "Add Item",
