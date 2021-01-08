@@ -21,6 +21,10 @@ config內clusters: 底下是創建的叢集
 
  `kubectl get node` 查閱連結context內的叢集
  
+ `kubectl get pods` 查閱pod內的叢集
+ 
+ `kubectl get pods --all-namespaces` 查閱pod內的叢集
+ 
  `kubectl config get-contexts` 查閱contexts數
  
  `kubectl config set current-context xxxxx` 設定要連哪一個context
