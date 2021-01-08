@@ -71,3 +71,14 @@
 		{{form}}
         <input type="submit" value='Save'/>
     </form>
+
+
+### 套用靜態物件
+
+新增 static 資料夾在 應用程式裡面
+
+底下新增css,js,img 等靜態物件
+
+在網頁上開頭新增`{% load static %}`
+
+css 套用:`<link href="{% static 'css/stylesheet.css' %}" rel="stylesheet">`
