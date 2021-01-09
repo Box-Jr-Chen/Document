@@ -82,3 +82,11 @@
 在網頁上開頭新增`{% load static %}`
 
 css 套用:`<link href="{% static 'css/stylesheet.css' %}" rel="stylesheet">`
+
+
+### 共用物件
+
+如果共用Nav物件
+新增navbar.html  ，把Navbar 物件丟進去
+
+在要共用的網頁上 寫上 `{% include 'navbar.html' %}`
