@@ -1,15 +1,23 @@
 # 定時任務event 學習筆記
 
-- 參考  https://www.itread01.com/content/1544748848.html
+參考  https://www.itread01.com/content/1544748848.html
 
 
-MySQL的定時任務（簡稱job）是可以通過MySQL自身實現的，
+- MySQL的定時任務（簡稱job）是可以通過MySQL自身實現的，
 
 MySQL自身job可以實現秒級定位，即可以精確到秒單位進行任務的執行（系統計劃任務一般是分鐘），
 
 MySQL 的job官方稱為event，MySQL EVENT的原理和觸發器非常的相似，
 
 區別在於，MySQL的event是系統定時驅動執行，而觸發器是通過需求觸發進行執行的，兩者各有優勢。
+
+- 在建立job之前，需要做以下幾件事：
+
+  1、確保系統的event事件開關是開啟的，允許我們建立event；
+
+  2、確保我們建立後是在成功執行的，所以要會檢視當前系統有的event
+
+  3、確保我們建立是按照需求來的，如果需要更改，我們要會更改event
 
 ### 檢視系統開關
 
