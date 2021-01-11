@@ -11,6 +11,16 @@ MySQL 的job官方稱為event，MySQL EVENT的原理和觸發器非常的相似�
 
 區別在於，MySQL的event是系統定時驅動執行，而觸發器是通過需求觸發進行執行的，兩者各有優勢。
 
+### 檢視系統開關
+
+-- 方法一
+select @@event_scheduler;
+
+--方法二
+show variables like 'event_scheduler';
+
+### 語法
+
 建立語法 :
 
         CREATE 
