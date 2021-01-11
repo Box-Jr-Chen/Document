@@ -21,11 +21,32 @@ MySQL 的job官方稱為event，MySQL EVENT的原理和觸發器非常的相似�
 
 ### 檢視系統開關
 
--- 方法一
-select @@event_scheduler;
+如果value是off或者是0；代表沒有開啟，我們可以手動開啟，
+
+只有在確保event全域性可用的情況下我們才能建立event；
+
+-- 方法1
+`select @@event_scheduler;`
+
+--方法2
+`show variables like 'event_scheduler';`
+
+
+開啟event事件：
+
+-- 方法1
+`set GLOBAL event_scheduler=ON;`
+-- 方法2
+`set GLOBAL event_scheduler=1;`
+
+### 檢視目前有的Event 事件
+
+--方法一
+`select * from mysql.event;`
 
 --方法二
-show variables like 'event_scheduler';
+`SELECT * FROM information_schema.events;`
+
 
 ### 語法
 
