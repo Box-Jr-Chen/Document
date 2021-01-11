@@ -81,3 +81,13 @@ MySQL官方提供的時間字元，可以參考:
             quantity {YEAR | QUARTER | MONTH | DAY | HOUR | MINUTE | 
                       WEEK | SECOND | YEAR_MONTH | DAY_HOUR | DAY_MINUTE | 
                       DAY_SECOND | HOUR_MINUTE | HOUR_SECOND | MINUTE_SECOND} 
+
+
+### 範例:
+
+    CREATE EVENT test_event_01
+    ON SCHEDULE EVERY 1 SECOND  
+    STARTS  CURRENT_TIMESTAMP
+    DO
+       INSERT INTO event_test.user(device_no,created_at)
+       VALUES('Test MySQL Event 2',NOW());
