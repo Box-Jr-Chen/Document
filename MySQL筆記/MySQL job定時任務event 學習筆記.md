@@ -36,15 +36,16 @@ MySQL 的job官方稱為event，MySQL EVENT的原理和觸發器非常的相似�
 
 -- 方法1
 `set GLOBAL event_scheduler=ON;`
+
 -- 方法2
 `set GLOBAL event_scheduler=1;`
 
 ### 檢視目前有的Event 事件
 
---方法一
+--方法1
 `select * from mysql.event;`
 
---方法二
+--方法2
 `SELECT * FROM information_schema.events;`
 
 
