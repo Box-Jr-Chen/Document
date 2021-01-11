@@ -48,7 +48,8 @@ MySQL 的job官方稱為event，MySQL EVENT的原理和觸發器非常的相似�
 --方法2
 `SELECT * FROM information_schema.events;`
 
-
+### 清除Event 事件
+`DROP EVENT  test_event_01;`
 ### 語法
 
 建立語法 :
