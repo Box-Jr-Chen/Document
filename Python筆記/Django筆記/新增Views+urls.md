@@ -90,6 +90,23 @@
 
 css 套用:`<link href="{% static 'css/stylesheet.css' %}" rel="stylesheet">`
 
+- 如果在`settings.py`把`Debug` 改為`False`，
+
+需要以下方法: 
+
+在`settings.py`:
+	STATIC_ROOT = '<appname>/static' ## 新增行
+	STATICFILES_DIRS = [
+	  os.path.join(BASE_DIR, '/static/'), ##修改地方
+	]
+
+
+在`urls.py` :
+
+	urlpatterns = [
+	....
+	    url(r'^static/(?P<path>.*)$', static.serve,{'document_root': settings.STATIC_ROOT}, name='static'),
+	]
 
 ### 共用物件
 
