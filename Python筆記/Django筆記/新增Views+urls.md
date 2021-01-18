@@ -1,5 +1,12 @@
-# 新增Views+urls
+# settings.py設定
 
+在主接口settings.py 裡面，
+
+	INSTALLED_APPS = [
+	    '<我們創建的APP名稱>',
+	]
+
+# 新增Views+urls
 
 在應用程式底下新增 templates檔案夾，並把你要顯示的html丟進去。
 在`views.py`裡面，定義可以funtion，用於顯示頁面需要參數或是方法
