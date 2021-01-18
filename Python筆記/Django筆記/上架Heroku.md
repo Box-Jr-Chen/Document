@@ -44,10 +44,11 @@
 接下來 :
 
 1 .在Heroku設定好一個專案後，到settings-->  Buildpacks --> Add Buildpack ，
-
 選擇Python。
 
 2 .上傳。
+
+
 
 3. 設定`heroku config:set DISABLE_COLLECTSTATIC=1`。
 
