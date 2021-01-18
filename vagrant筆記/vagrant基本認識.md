@@ -12,6 +12,8 @@ vagrant destroy 刪除虛擬環境
 vagrant ssh 登入虛擬環境
 再按下exit 離開虛擬環境
 
+vagrant status 查閱狀態
+
 ### Vagrantfile
 
   目前遇到狀況，vagrant init 以後先不進行修改，執行vagrant up 先啟動虛擬機並執行環境，之後在修改Vagrantfile 
