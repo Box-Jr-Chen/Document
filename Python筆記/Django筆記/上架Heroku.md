@@ -43,8 +43,9 @@
 
 接下來 :
 
-1 .在Heroku設定好一個專案後，到settings-->  Buildpacks --> Add Buildpack ，
-選擇Python。
+1 .在Heroku設定好一個專案後，
+
+到settings-->  Buildpacks --> Add Buildpack ，選擇Python。
 
 2 .上傳到Heroku。
 
