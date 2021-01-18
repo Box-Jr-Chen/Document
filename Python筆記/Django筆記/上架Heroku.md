@@ -48,7 +48,7 @@
 
 2 .上傳到Heroku。
 
-3. 設定`heroku config:set DISABLE_COLLECTSTATIC=1`。
+3 .設定`heroku config:set DISABLE_COLLECTSTATIC=1`。
 
 
 之後就成功上架。
