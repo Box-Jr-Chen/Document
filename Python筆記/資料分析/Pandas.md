@@ -127,3 +127,6 @@
       condition = data["name"]=="Amy"  # 資料中是Amy的
       filteredData = data[condition] >=1000
       filteredData = data[condition]
+
+
+      data["xxx"]= pd.to_numeric(data["xxx"]) #資料轉換成數字
