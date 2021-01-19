@@ -14,6 +14,7 @@
     import pandas as pd
     data = pd.Series("xxx")
     
+    數字:
     data.sum() #加法整合
     data.prod() #乘法整合
     data.max() #最大值
@@ -24,7 +25,15 @@
     data.nsmallest(3)取最小三個值
     data = data*2 #放大兩倍
     
-    
+    ---------------------------
+    字串:
+    data.str.lower() #變成小寫
+    data.str.upper() #變成大寫
+    data.str.len() #得到字串長度
+    data.str.cat(sep=",") #用,將每個字串在一起
+    data.str.contains("P")#判斷字串是否有大寫P
+    data.str.replace("old","new")#取代
+        ---------------------------
     #印出dtype 屬性
     print(data.dtype)
     #印出多大
