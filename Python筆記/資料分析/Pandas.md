@@ -41,8 +41,7 @@
     print(data.size) #印出多大
     print(data.index)#印出索引
     
-    
-
+   
 
 
 ### 雙維度 DataFrame 
@@ -99,4 +98,29 @@
 
 ### Panel
 
-用來處理有資料及索引、列索引與欄標籤的三維資料集。
+用來處理有資料及索引、列索引與欄標籤的三維資料集
+
+
+
+
+###篩選資料
+
+     Ex:
+     
+     單維:
+      import pandas as pd
+      data = pd.DataFrame("xxx")
+      condition = [True,False,True]  # 基本認識
+      condition = data >5  # 資料大於5
+      condition = data.str.contains("p")  # 資料包含p
+      filteredData = data[condition]
+      
+     多維: 
+      import pandas as pd
+      data = pd.DataFrame("xxx")
+      condition = [True,False,True]  # 基本認識
+      condition = data[欄位名稱] >5  # 資料大於5
+      condition = data.str.contains("p")  # 資料包含p
+      condition = data["name"]=="Amy"  # 資料中是Amy的
+      filteredData = data[condition] >=1000
+      filteredData = data[condition]
