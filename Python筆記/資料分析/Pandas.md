@@ -10,13 +10,27 @@
 
 用來處理時間序列相關的資料(如感測器資料等)，主要為建立索引的一維陣列。
 
-  Ex:
   
     import pandas as pd
     data = pd.Series("xxx")
-    data.max() #找到最大值
+    
+    data.sum() #加法整合
+    data.prod() #乘法整合
+    data.max() #最大值
+    data.mean() #最大值
     data.median() #找到中位數
+    data.std()標準差
+    data.mlargest(3)取最大三個值
+    data.nsmallest(3)取最小三個值
     data = data*2 #放大兩倍
+    
+    
+    #印出dtype 屬性
+    print(data.dtype)
+    #印出多大
+    print(data.size)
+
+
 
 
 ### 雙維度 DataFrame 
