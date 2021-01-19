@@ -5,6 +5,7 @@
 `pip install pandas`
 
 -參考    https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
+
 -參考    https://oranwind.org/python-pandas-ji-chu-jiao-xue/
 ### 單維度 Series
 
@@ -103,7 +104,9 @@
 
 
 
-###篩選資料
+
+
+### 篩選資料
 
      Ex:
      
