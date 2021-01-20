@@ -42,6 +42,15 @@
     print(data.size) #印出多大
     print(data.index)#印出索引
     
+    data.apply()列資料批量處理
+    ==>data.apply(lambda x:x.replace(",", ""))
+    
+    data.str.extract()正則匹配
+     ==>data = data.str.extract(r'(\d+)')  # 匹配數字
+ 
+- 參考 https://www.itread01.com/content/1542566488.html
+     
+    
    
 
 
