@@ -13,12 +13,6 @@
   
   遇到問題: 
   
-   csv文件默認的是以逗號為分隔符，
+   csv文件默認的是以逗號為分隔符，建議讀取的文件單一個都要"xxxx"
 
-   但是中文中逗號的使用率很高，
 
-   爬取中文數據時就容易造成混淆，
-
-   所以使用pandas寫入csv時可以設置參數sep='\t' 或是'\n' 
-
-   `pd.read_csv('path',delimiter="\t")` 或者 `pd.read_csv('path',delimiter="\n")`
