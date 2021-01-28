@@ -6,3 +6,4 @@
 
 - 文件名叫`.ipynb(ipython notebook)`
 
+- `Ctrl+Enter`、 `Alt+Enter`、  `Shift+Enter`運行
