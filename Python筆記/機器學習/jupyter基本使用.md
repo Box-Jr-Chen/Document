@@ -39,4 +39,19 @@
        #當前目錄下文件
        %ls 
        
-  
+      #創建folder
+      %mkdir xxx
+      
+       #進入folder
+      %cd xxx
+      
+ -markdown :
+ 
+   1.把上方的Code模式轉換成Markdown模式
+   
+   在格子內打 就可以寫註釋，執行就變成 Markdown
+   
+   2.或是用鍵盤M 變成 Markdown。
+   
+   3.![](xxx.jpg) 顯示圖片，也可以用url。
+   
