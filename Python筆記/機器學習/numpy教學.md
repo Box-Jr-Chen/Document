@@ -18,4 +18,5 @@
       #np.array 與 python矩陣不同處就是可以用np的方法計算 
       
  -求和:`np.sum()`
+ 
  -求方差:`np.var()`
