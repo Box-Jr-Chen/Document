@@ -39,6 +39,8 @@
       
     =>
     
+      #對角線都是1 
+     
       np.eye(N=5) #對角線都是1  
       
       exprot :[[1,0,0,0,0],  #單位矩陣
@@ -57,6 +59,8 @@
                
     =>
     
+      #等差數列 
+    
       np.array(start,stop,step,dtype=None) #等差數列 
       
       np.array(0,100,2)
@@ -65,6 +69,8 @@
       
     =>
     
+      # 隨機
+     
       np.random.randint(low,high=None,step,size=None,dtype='T') # 隨機
       
       np.random.randint(0,100,size=10)
@@ -81,9 +87,9 @@
                
      =>        
      
+        #np.random.randn #標準正太
         #dimession 維度
         #平均值是0， 方差是1
-        np.random.randn #標準正太
       
         np.random.randn(4,5)
         
@@ -92,8 +98,10 @@
                 [-1.24,0.27,0.52,-1.55,-0.833],
                 [-1.24,0.27,0.52,-1.55,-0.833]]  
       
-     =>        
+     =>    
      
+        # 平均值為loc的矩陣,size =1 #大小1,scale #方差10 
+       
         np.random.normal(loc=0.0,scale=1.0,size=None) 
       
         np.random.normal(loc= 175,scale=10,size=100) # 平均值為175的矩陣,size =100 #大小100,scale=10 #方差10 
@@ -114,5 +122,14 @@
  
  - 求標準差:`np.std() #是方差的開平方` 
  
+ - 求大小:`np.size` 
  
+ - 求形狀:`np.shape` 
+    
+    export :`ex: (100,1,3)`
+    
+ - 求維度:`np.ndim`    
+ 
+ - 求類型:`np.dtype`    
+  
  # 人工智能的本質就是解方程式~~~~
