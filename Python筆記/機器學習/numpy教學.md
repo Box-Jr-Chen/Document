@@ -154,6 +154,17 @@
          `比如圖片轉成矩陣以後 分為高、寬、像素，依序就是0,1,2`
          `使用轉置，axis=(1,0,2) 就是把高跟寬顛倒過來`
 
+  - 級聯:`np.concatenate([nd,nd])` 
+  
+         `# 把兩個矩陣連起來`
+         
+         `ex: 圖片矩陣 想把左右兩邊連起來，去掉中間`
+         
+         `pic_left = pic_data[:,:230] #左邊`
+         `pic_right = pic_data[:,460:] #右邊`
+         `np.concatenate([pic_left,pic_right]) # pic_left.shape 與 pic_rightshape對不齊就會抱錯`
+         `np.concatenate([pic_left,pic_right],axis=1)  # 長0 、寬1，我們要進行寬的連結，而長是一致地shape數字，所以axis打1就不會報錯`
+
   -將圖片轉成矩陣:
   
     `from PIL Import Image  #用PIL讀取圖片`
