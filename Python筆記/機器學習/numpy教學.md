@@ -25,6 +25,30 @@
       np.array(0,10000,1)
       
       
+    =>
+    
+      np.ones(shape=(5,5),dtype=np.int8)
+            
+    =>
+    
+      np.ones(shape=(5,5,4),dtype=float16) #  三維
+      
+    =>
+    
+      np.full(shape=(3,4),fill_value=3.14) #全部都是fill_value
+      
+    =>
+    
+      np.eye(N=5) #對角線都是1  
+      
+      exprot :[[1,0,0,0,0],
+               [0,1,0,0,0], 
+               [0,0,1,0,0],
+               [0,0,0,1,0],
+               [0,0,0,0,1],]
+               
+               
+               
       
  - 求和:`np.sum()`
  
