@@ -47,10 +47,72 @@
                [0,0,0,1,0],
                [0,0,0,0,1],]
                
-               
-               
+    =>
+    
+      np.linspace(start,stop,num=50,endpoint=True,retstop=False,dtype=None) #等差數列 
       
+      np.linspace(0,100,num=51)
+      
+      exprot :[0,2,4,6,8,10,12,14,16,...]            
+               
+    =>
+    
+      np.array(start,stop,step,dtype=None) #等差數列 
+      
+      np.array(0,100,2)
+      
+      exprot :[0,2,4,6,8,10,12,14,16,...]   
+      
+    =>
+    
+      np.random.randint(low,high=None,step,size=None,dtype='T') # 隨機
+      
+      np.random.randint(0,100,size=10)
+      
+      exprot :[52,22,44,16,78,10,32,44,16,...]    一維
+      
+      np.random.randint(0,100,size=[5,5])
+      
+      exprot :[[52,22,44,16,78], 五維
+               [52,22,44,16,78],
+               [52,22,44,16,78],
+               [52,22,44,16,78],
+               [52,22,44,16,78]]  
+               
+     =>        
+     
+        #dimession 維度
+        #平均值是0， 方差是1
+        np.random.randn #標準正太
+      
+        np.random.randn(4,5)
+        
+        exprot :[[-1.24,0.27,0.52,-1.55,-0.833], 五維
+                [-1.24,0.27,0.52,-1.55,-0.833],
+                [-1.24,0.27,0.52,-1.55,-0.833],
+                [-1.24,0.27,0.52,-1.55,-0.833]]  
+      
+     =>        
+     
+        np.random.normal(loc=0.0,scale=1.0,size=None) 
+      
+        np.random.normal(loc= 175,scale=10,size=100) # 平均值為175的矩陣,size =100 #大小100,scale=10 #方差10 
+        np.random.normal(loc= 175,scale=10,size=100).round(2) #取小數點2位
+
+     =>        
+       
+        #0~1 大小為100的矩陣
+        np.random.random(100) 
+      
+
+
  - 求和:`np.sum()`
+ 
+ - 求平均值:`np.mead()`
  
  - 求方差:`np.var()`
  
+ - 求標準差:`np.std() #是方差的開平方` 
+ 
+ 
+ # 人工智能的本質就是解方程式~~~~
