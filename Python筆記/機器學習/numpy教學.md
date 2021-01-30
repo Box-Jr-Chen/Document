@@ -150,31 +150,39 @@
   
   - 轉置:`np.transpose(nd,axis=(1,0,2))  `
        
-         `# 矩陣如果是三維 順序分別是0,1,2 `
-         `比如圖片轉成矩陣以後 分為高、寬、像素，依序就是0,1,2`
-         `使用轉置，axis=(1,0,2) 就是把高跟寬顛倒過來`
+         # 矩陣如果是三維 順序分別是0,1,2 
+         比如圖片轉成矩陣以後 分為高、寬、像素，依序就是0,1,2
+         使用轉置，axis=(1,0,2) 就是把高跟寬顛倒過來
 
   - 級聯:`np.concatenate([nd,nd])` 
   
-         `# 把兩個矩陣連起來`
+         # 把兩個矩陣連起來
          
-         `ex: 圖片矩陣 想把左右兩邊連起來，去掉中間`
+         ex: 圖片矩陣 想把左右兩邊連起來，去掉中間
          
-         `pic_left = pic_data[:,:230] #左邊`
-         `pic_right = pic_data[:,460:] #右邊`
-         `np.concatenate([pic_left,pic_right]) # pic_left.shape 與 pic_rightshape對不齊就會抱錯`
-         `np.concatenate([pic_left,pic_right],axis=1)  # 長0 、寬1，我們要進行寬的連結，而長是一致地shape數字，所以axis打1就不會報錯`
+         pic_left = pic_data[:,:230] #左邊
+         pic_right = pic_data[:,460:] #右邊
+         np.concatenate([pic_left,pic_right]) # pic_left.shape 與 pic_rightshape對不齊就會抱錯
+         np.concatenate([pic_left,pic_right],axis=1)  # 長0 、寬1，我們要進行寬的連結，而長是一致地shape數字，所以axis打1就不會報錯
 
   -將圖片轉成矩陣:
   
-    `from PIL Import Image  #用PIL讀取圖片`
-    `file = Image.open('xxxxx.jpg') `
-    `file_data = np.array(file)`
-    `file_data`
+    from PIL Import Image  #用PIL讀取圖片
+    file = Image.open('xxxxx.jpg') 
+    file_data = np.array(file)
+    file_data
+    
+    Image.fromarray(file_data[:,:,[1,0,2]]) # 紅綠藍 0,1,2 => 綠紅藍1,0,2
+    Image.fromarray(file_data[:,:,0]) # 變成二維，紅綠藍沒有，變成灰色
+    
+    import matplotlib.pyplot as plt
+    %matplotlib inline  #為了作圖方便 環境變量
+    
+    plt.imshow(file_data) #一般
+    plt.imshow(file_data[::-1]) #顛倒
+    plt.imshow(file_data[::5,::5]) #算五個像素取一次
+    plt.imshow(file_data[::-5,::-5]) #顛倒 並算五個像素取一次
+    plt.imshow(file_data[:,:,::-1]) #像素顛倒 其他不變
 
  # 人工智能的本質就是解方程式~~~~
- 
- 
- https://www.youtube.com/watch?v=De662Es45mE&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=7
- 
-45:00
+
