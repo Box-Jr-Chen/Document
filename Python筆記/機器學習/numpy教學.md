@@ -123,6 +123,8 @@
 
  - 求和:`nd.sum()`
  
+ - 求和:`np.nansum(nb) #如果有空值的話，使用sum求和會變成nan，而nansum會忽視`
+  
  - 求乘和:`nd.prod()`
  
  - 求平均值:`nd.mean()`
@@ -240,5 +242,14 @@
     plt.imshow(file_data[::-5,::-5]) #顛倒 並算五個像素取一次
     plt.imshow(file_data[:,:,::-1]) #像素顛倒 其他不變
 
- # 人工智能的本質就是解方程式~~~~
+---------------------------------------------------------------------
+
+  -求pi值: `np.pi` 
+
+  -使用數學函式: `np.sin`，`np.arcsin` ...
+
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
+
+
+
+
