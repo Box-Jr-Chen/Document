@@ -113,20 +113,30 @@
         np.random.random(100) 
       
 
+ - 求值是否都是0以上:`nd.any() #其中一個是0就等於還是為True，因為其他還是不等於0`、`nd.all() #其中一個是0就等於false`
 
- - 求和:`np.sum()`
+ - 求和:`nd.sum()`
  
- - 求乘和:`np.prod()`
+ - 求乘和:`nd.prod()`
  
- - 求平均值:`np.mean()`
+ - 求平均值:`nd.mean()`
  
- - 求平均值:`np.mean(axis =1) #求每一維的平均`
+ - 求平均值:`nd.mean(axis =1) #求每一維的平均`
  
- - 求平均值:`np.mean(axis =0) #求每一列的平均`
+ - 求平均值:`nd.mean(axis =0) #求每一列的平均`
+ 
+ - 求中位值:`np.median(nd)  #方法為np.median(矩陣)`
+ 
+  %% 聚合函數-->合併到一塊，根據某一個方向進行合併，axis
+ 
+ - 求百分比的數據:`np.percentile(nd,q=[0,100])  #講數字排列以後 取百分之0前面，與百分之100的數`
+ `np.percentile(nd,q=50)  #百分之50的單一值，類似中位數`
  
  - 求最大值索引:`np.argmax()`、`np.argmax(axis=1) #每行的最大值`、`np.argmax(axis=-1) #倒著數每行的最大值`
  
- - 求條件的索引:`np.argwhere(nd >50) #裡面的值大於50`
+ - 求條件的索引:`np.argwhere(nd >50) #裡面的值大於50`、`np.argwhere((nd >50) &(nd<100)) #裡面的值大於50 小於100`
+ 
+ - 變成一維:`np.ravel()`
  
  - 求方差:`np.var()`
  
@@ -213,4 +223,4 @@
     plt.imshow(file_data[:,:,::-1]) #像素顛倒 其他不變
 
  # 人工智能的本質就是解方程式~~~~
-https://www.youtube.com/watch?v=JrT77zf0hGg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=8
+https://www.youtube.com/watch?v=JrT77zf0hGg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=
