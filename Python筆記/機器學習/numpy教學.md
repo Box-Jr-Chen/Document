@@ -179,6 +179,10 @@
   
   - 切分:`np.hsplit(nd,indices_or_sections=2) #axis=1`
   
+  - 矩陣內存:`id(nd)`
+  
+  - 複製矩陣:`nd`
+  
   -將圖片轉成矩陣:
   
     from PIL Import Image  #用PIL讀取圖片
