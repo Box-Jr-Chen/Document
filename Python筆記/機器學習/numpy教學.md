@@ -250,6 +250,6 @@
 
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
 
-
+12:56
 
 
