@@ -165,6 +165,10 @@
          np.concatenate([pic_left,pic_right]) # pic_left.shape 與 pic_rightshape對不齊就會抱錯
          np.concatenate([pic_left,pic_right],axis=1)  # 長0 、寬1，我們要進行寬的連結，而長是一致地shape數字，所以axis打1就不會報錯
 
+  - 水平級聯:`np.hstack((nd1,nd2))  # 列數增多 axis=0`
+
+  - 垂直級聯:`np.vstack((nd1,nd2)) # 行數增多 axis=1`
+
   -將圖片轉成矩陣:
   
     from PIL Import Image  #用PIL讀取圖片
