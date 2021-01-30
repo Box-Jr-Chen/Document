@@ -185,4 +185,4 @@
     plt.imshow(file_data[:,:,::-1]) #像素顛倒 其他不變
 
  # 人工智能的本質就是解方程式~~~~
-
+https://www.youtube.com/watch?v=JrT77zf0hGg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=8
