@@ -120,6 +120,14 @@
  
  - 求平均值:`np.mean()`
  
+ - 求平均值:`np.mean(axis =1) #求每一維的平均`
+ 
+ - 求平均值:`np.mean(axis =0) #求每一列的平均`
+ 
+ - 求最大值索引:`np.argmax()`、`np.argmax(axis=1) #每行的最大值`、`np.argmax(axis=-1) #倒著數每行的最大值`
+ 
+ - 求條件的索引:`np.argwhere(nd >50) #裡面的值大於50`
+ 
  - 求方差:`np.var()`
  
  - 求標準差:`np.std() #是方差的開平方` 
