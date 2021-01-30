@@ -169,6 +169,16 @@
 
   - 垂直級聯:`np.vstack((nd1,nd2)) # 行數增多 axis=1`
 
+  - 切分:`np.split(nd,indices_or_sections=3)  # 將矩陣 切分為三份`
+
+  - 切分:`np.split(nd,indices_or_sections=[1])  # 將矩陣第一維切出來`
+  
+  - 切分:`np.split(nd,indices_or_sections=[1,3])  # 將矩陣第一維切一刀、第三維切一刀`
+  
+  - 切分:`np.vsplit(nd,indices_or_sections=2) #axis=0`
+  
+  - 切分:`np.hsplit(nd,indices_or_sections=2) #axis=1`
+  
   -將圖片轉成矩陣:
   
     from PIL Import Image  #用PIL讀取圖片
