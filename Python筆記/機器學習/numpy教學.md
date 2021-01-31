@@ -270,8 +270,17 @@
    
    `range`:範圍。
 
+---------------------------------------------------------------------
+
+`np.save('./data.npy',nd)` : 保存為.npy文件。
+
+`np.load('./data.npy')` : 保存為.npy文件。
+
+
+
+
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
 
-12:56
+37:05
 
 
