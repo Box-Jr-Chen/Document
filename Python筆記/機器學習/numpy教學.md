@@ -249,6 +249,26 @@
   -求pi值: `np.pi` 
 
   -使用數學函式: `np.sin`，`np.arcsin` ...
+  
+  -統計學: 
+  
+   1. 平均值
+  
+   2. 中位數
+  
+   3. 方差
+  
+   4. 標準差
+  
+   5. 協方差(兩個屬性求解)
+  
+   6. 關聯(相關系系數 舉例:一個男生猥瑣程度與他受女生歡迎程度之間關係 -1~1，如果是0沒關係)
+
+  -直方圖`np.histrogram(nd,bins=5,range=[0,150]) # 直方圖，統計數據出現的頻次`:
+  
+   `bins`:分成幾分。
+   
+   `range`:範圍。
 
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
 
