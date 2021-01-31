@@ -294,9 +294,11 @@ x+y+z =8
 
 目標矩陣:`Y = np.array([8,8,2])`
 
-逆矩陣:`X_inv =`np
+逆矩陣:`X_inv =np.linalg.inv(X)`
 
-逆矩陣
+求解:`np.dot(X_inv,Y)` ==>`array([2,1,5])`
+
+
 
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
 
