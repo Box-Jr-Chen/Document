@@ -127,6 +127,8 @@
   
  - 求乘和:`nd.prod()`
  
+ - 矩陣乘法:`np.dot(X,Y)`
+ 
  - 求平均值:`nd.mean()`
  
  - 求平均值:`nd.mean(axis =1) #求每一維的平均`
@@ -134,6 +136,8 @@
  - 求平均值:`nd.mean(axis =0) #求每一列的平均`
  
  - 求中位值:`np.median(nd)  #方法為np.median(矩陣)`
+ 
+ - 求逆矩陣:`np.linalg.inv(nd) `
  
   %% 聚合函數-->合併到一塊，根據某一個方向進行合併，axis
  
@@ -274,10 +278,25 @@
 
 `np.save('./data.npy',nd)` : 保存為.npy文件。
 
-`np.load('./data.npy')` : 保存為.npy文件。
+`np.load('./data.npy')` : 讀取.npy文件。
 
+`np.savetxt('./data.txt',nd,delimiter=' ')` : 保存為.txt文件。delimiter 為間格區分方式。
 
+`np.loadtxt('./data.txt')` : 讀取.txt文件。
 
+---------------------------------------------------------------------
+範例:
+x+y+z =8
+2x-y+z =8
+3x+y-z =2
+
+寫成: `X = np.array([[1,1,1],[2,-1,1],[3,1,-1]])`
+
+目標矩陣:`Y = np.array([8,8,2])`
+
+逆矩陣:`X_inv =`np
+
+逆矩陣
 
 https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=9
 
