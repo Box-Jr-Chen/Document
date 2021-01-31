@@ -318,12 +318,4 @@ nd+10 是一個廣播機制
      求nd4 - nd4_mean，但是不匹配
      必須先把nd4_mean.reshape(4,1)，
      這樣就能相減
- ---------------------------------------------------------------------     
-
-
-
-https://www.youtube.com/watch?v=LjjD0w75KTg&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=10
-
-
-
 
