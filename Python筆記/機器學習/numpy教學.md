@@ -3,7 +3,7 @@
 <img src="numpy.png" width="400">
 
 
-- 中文手冊 https://www.numpy.org.cn/reference/
+- 中文手冊 https://www.numpy.org.cn/reference/routines/math.html
 
 
 `import numpy as np`
