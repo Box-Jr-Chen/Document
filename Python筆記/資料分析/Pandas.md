@@ -2,6 +2,8 @@
 
 ### 安裝Pandas
 
+-官網 https://pandas.pydata.org/
+
 `pip install pandas`
 
 -參考    https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
