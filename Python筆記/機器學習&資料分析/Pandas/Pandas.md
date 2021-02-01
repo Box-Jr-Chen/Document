@@ -26,6 +26,10 @@
     data.max() #最大值
     data.mean() #平均值
     data.median() #找到中位數
+    
+    data.iloc[數字] #找尋值
+    data.loc[索引] #找尋值
+    
     data.std()標準差
     data.mlargest(3)取最大三個值
     data.nsmallest(3)取最小三個值
