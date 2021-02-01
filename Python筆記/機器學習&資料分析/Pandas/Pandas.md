@@ -111,7 +111,13 @@
     import pandas as pd
     data = pd.DataFrame("xxx")
     data = pd.DataFrame("xxx",index=索引)
-
+    
+    ex:
+    data = pd.DataFrame(
+                       "Pyton":np.random.randint(0,150,size=5),
+                       "Math":np.random.randint(0,150,size=5),
+                       "En":np.random.randint(0,150,size=5),   
+                       index=list('ABCDE'))
     
     列資料(Row):
     data.iloc["列編號"]由0累加
@@ -119,7 +125,8 @@
     
     data.loc["索引"]#Series型態
     
-
+    data.to_csv('./data.txt')
+    data.to_excel('./data.xlsx')
     
     欄資料(Column):
     data["欄位名稱"]
@@ -194,7 +201,7 @@
       切片規則和numpy一樣
       
 
-
+      
 
 
 ### 分析流程
