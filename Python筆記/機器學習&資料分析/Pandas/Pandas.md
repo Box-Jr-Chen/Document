@@ -9,6 +9,7 @@
 -參考    https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
 
 -參考    https://oranwind.org/python-pandas-ji-chu-jiao-xue/
+
 ### 單維度 Series
 
 用來處理時間序列相關的資料(如感測器資料等)，主要為建立索引的一維陣列。
@@ -26,14 +27,52 @@
     data.max() #最大值
     data.mean() #平均值
     data.median() #找到中位數
+    data.T #倒置矩陣
+    data() # 方差
     
     data.iloc[數字] #找尋值
     data.loc[索引] #找尋值
+    
+    data.index #索引
+    data.values #值
+    data.head() #頭
+    data.tail() #尾巴
+    data.pow(2) #函數計算數據幀和其他逐元素(二進製運算符pow)的指數冪
+    
+    計算各值的數量: data.value_counts()
+    ex
+    def count_suffix(li):
+        return Series([l.split('.')[-1] for l in li]).value_counts()
+    #可以取文件後副檔名的量
+    
+    
+    
+    data.astype(np.int8) # 轉變type to int
+    data.astype(np.uint8) # 轉變type to uint
+    
+    
+    
+    data.isnull()# 返回各值是否為空值
+    ex:  
+        cond = data.isnull()
+        s[cond] # 空值取出
+  
+    data.notnull()# 返回各值是否不為空值
+    ex:  
+        cond = data.isnull()
+        s[cond] # 空值取出
+  
+    data.add(10,fill_value=0) #將0的值填入10
+    
+    
+    
     
     data.std()標準差
     data.mlargest(3)取最大三個值
     data.nsmallest(3)取最小三個值
     data = data*2 #放大兩倍
+    
+    data.name ='xxx' #命名陣列
     
     ---------------------------
     字串:
@@ -53,6 +92,9 @@
     
     data.str.extract()正則匹配
      ==>data = data.str.extract(r'(\d+)')  # 匹配數字
+ 
+ 
+ 
  
 - 參考 https://www.itread01.com/content/1542566488.html
      
@@ -76,6 +118,8 @@
     data.iloc["列編號", sep="\n"]由0累加
     
     data.loc["索引"]#Series型態
+    
+
     
     欄資料(Column):
     data["欄位名稱"]
@@ -145,6 +189,12 @@
 
 
       data["xxx"]= pd.to_numeric(data["xxx"]) #資料轉換成數字
+
+
+      切片規則和numpy一樣
+      
+
+
 
 
 ### 分析流程
