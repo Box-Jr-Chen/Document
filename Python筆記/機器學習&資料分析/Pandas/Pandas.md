@@ -131,6 +131,11 @@
     欄資料(Column):
     data["欄位名稱"]
     
+    data.columns  #顯示多少欄位
+    
+    contb.groupby('xxx') #使用groupby查詢欄位
+    
+    
     建立新欄位:
     data["欄位名稱"] = 列表資料
     data["欄位名稱"] = Series型態資料
