@@ -8,4 +8,6 @@
 
 複雜度參數α≥0控制收縮量：α值越大 ，收縮量就越大，因此係數對共線性越穩建。
 
+目的就是讓W越小。
+
 <img src="ridge_path_01.png" style="border:none;">
