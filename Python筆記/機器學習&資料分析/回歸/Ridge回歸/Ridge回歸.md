@@ -28,3 +28,4 @@
 數學家為了求解，就加了一個單位矩陣。     
      
      
+https://www.youtube.com/watch?v=z-iTRWK9czk&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=72&t=30m2s
