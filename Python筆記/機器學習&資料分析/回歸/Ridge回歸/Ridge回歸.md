@@ -11,3 +11,20 @@
 目的就是讓W越小，向0靠近。
 
 <img src="ridge_path_01.png" style="border:none;">
+
+%%單位矩陣 入I
+
+
+有些方程式為奇異矩陣，比如:
+
+     x + y + z = 10
+     2x+ y + z = 10
+     2x+ 2y+ 2z= 20 
+     
+     X = np.array([[1,1,1],[2,1,1],[2,2,2]])
+     np.linalg.matrix_rank(X) =>2  未滿秩
+     
+     
+數學家為了求解，就加了一個單位矩陣。     
+     
+     
