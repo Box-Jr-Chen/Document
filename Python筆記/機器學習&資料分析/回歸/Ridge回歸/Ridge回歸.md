@@ -71,5 +71,7 @@
   2.變量間存在共線性（最小二乘回歸得到的係數不穩定，方差很大）
 
  -參考 https://www.cnblogs.com/xueyinzhe/p/7253315.html
+ 
+ -參考(Ridge 加了二階正則項，係數絕對值偏小的原因) https://www.jianshu.com/p/32d02e75a630
 
-https://www.youtube.com/watch?v=z-iTRWK9czk&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=72&t=30m2s
+https://www.youtube.com/watch?v=z-iTRWK9czk&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=73
