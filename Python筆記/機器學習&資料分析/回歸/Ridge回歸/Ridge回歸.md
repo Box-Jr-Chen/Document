@@ -50,4 +50,6 @@
 
   2.變量間存在共線性（最小二乘回歸得到的係數不穩定，方差很大）
 
+ -參考 https://www.cnblogs.com/xueyinzhe/p/7253315.html
+
 https://www.youtube.com/watch?v=z-iTRWK9czk&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=72&t=30m2s
