@@ -16,7 +16,7 @@
   
   隨著迭代的進行，難以預測的示例受到越來越多的影響。
   
-  <img src='Ads.jpg' style='width:300px' />
+  <img src='Ads.jpg' style='width:250px' />
   
   
   
