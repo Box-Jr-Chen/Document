@@ -1,8 +1,12 @@
 # xgboost
 
+  - 官網 https://xgboost.readthedocs.io/en/latest/
+
+  - xgboost  (陳天琦)
+  
   - gbdt 梯度提升樹，透過殘差學習，改進成果。
   
-  - xgboost  (陳天琦)
+  - XGBoost是經過優化的分佈式梯度提升庫，旨在高效，靈活且可移植。它在Gradient Boosting框架下實現了機器學習算法。
   
   
   
