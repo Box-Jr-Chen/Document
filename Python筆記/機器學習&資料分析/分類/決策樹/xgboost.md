@@ -8,6 +8,6 @@
   
   - XGBoost是經過優化的分佈式梯度提升庫，旨在高效，靈活且可移植。它在Gradient Boosting框架下實現了機器學習算法。
   
-  
+  - 安裝`pip install xgboost`
   
   https://www.youtube.com/watch?v=rXOddles6wE&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=89&t=3m30s
