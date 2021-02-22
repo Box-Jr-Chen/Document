@@ -41,3 +41,5 @@ SVM (Support Vector Machine) 向量分類器
   3.平面看到的樣子
  
 <img src="SVM_demo_07.png"/>
+
+- SVM 分切3D圖 https://www.youtube.com/watch?v=OdlNM96sHio
