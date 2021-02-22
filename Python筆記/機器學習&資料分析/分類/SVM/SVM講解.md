@@ -12,3 +12,12 @@ SVM (Support Vector Machine) 向量分類器
 
 簡單例子:
 
+  將下列分類
+
+<img src="SVM_demo_01.png"/>
+
+<img src="SVM_demo_02.png"/>
+
+<img src="SVM_demo_03.png"/>
+
+<img src="SVM_demo_04.png"/>
