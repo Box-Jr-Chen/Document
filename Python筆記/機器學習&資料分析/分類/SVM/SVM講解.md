@@ -12,12 +12,17 @@ SVM (Support Vector Machine) 向量分類器
 
 簡單例子:
 
-  將下列分類
+  1.將下列分類
 
 <img src="SVM_demo_01.png"/>
 
+  2.以下不一定好
+
 <img src="SVM_demo_02.png"/>
+
 
 <img src="SVM_demo_03.png"/>
 
+  3.找到分際線附近的點
+ 
 <img src="SVM_demo_04.png"/>
