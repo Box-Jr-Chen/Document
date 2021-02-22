@@ -1,5 +1,7 @@
 # SVM講解
 
+- 官網 https://scikit-learn.org/stable/modules/svm.html#svm-classification
+
 SVM (Support Vector Machine) 向量分類器 
 
 - 向量機
