@@ -9,3 +9,6 @@ SVM (Support Vector Machine) 向量分類器
 - 非線性
 
 - 高為模式識別 
+
+簡單例子:
+
