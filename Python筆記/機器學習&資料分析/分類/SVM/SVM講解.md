@@ -43,3 +43,15 @@ SVM (Support Vector Machine) 向量分類器
 <img src="SVM_demo_07.png"/>
 
 - SVM 分切3D圖 https://www.youtube.com/watch?v=OdlNM96sHio
+   名詞: 
+   1.球 等於data
+   
+   2.棍子 等於classifier
+   
+   3.最大間隙trick  叫做 optimization
+
+   4.拍桌子叫 Kernelling
+
+   5.那張紙叫 hyperplane 
+
+   
