@@ -64,3 +64,8 @@ SVM (Support Vector Machine) 向量分類器
 <img src="SVM_demo_08.png"/>
 
 - 支持向量公式 https://developer.aliyun.com/article/655112
+
+
+<img src="SVM_demo_09.png"/>
+
+<img src="SVM_demo_10.png"/>
