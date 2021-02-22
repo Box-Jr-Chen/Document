@@ -59,4 +59,6 @@ SVM (Support Vector Machine) 向量分類器
    
 ### 支持向量
 
+  靠近線的點為支持向量
+  
 <img src="SVM_demo_08.png"/>
