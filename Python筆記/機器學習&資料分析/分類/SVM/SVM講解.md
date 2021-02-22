@@ -67,5 +67,7 @@ SVM (Support Vector Machine) 向量分類器
 
 
 <img src="SVM_demo_09.png"/>
-
+公式:
 <img src="SVM_demo_10.png"/>
+推導出:
+<img src="SVM_demo_11.png"/>
