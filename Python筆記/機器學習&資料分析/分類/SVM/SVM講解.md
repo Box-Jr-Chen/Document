@@ -57,3 +57,6 @@ SVM (Support Vector Machine) 向量分類器
    5.那張紙叫 hyperplane 
 
    
+### 支持向量
+
+<img src="SVM_demo_08.png"/>
