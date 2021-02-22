@@ -26,3 +26,18 @@ SVM (Support Vector Machine) 向量分類器
   3.找到分際線附近的點
  
 <img src="SVM_demo_04.png"/>
+
+
+複雜例子:
+
+  1.將下列分類
+
+<img src="SVM_demo_05.png"/>
+
+  2.將二維變成高維 ，因為屬性不同， 高度也就不同
+
+<img src="SVM_demo_06.png"/>
+
+  3.平面看到的樣子
+ 
+<img src="SVM_demo_07.png"/>
