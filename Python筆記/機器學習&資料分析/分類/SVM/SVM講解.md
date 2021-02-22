@@ -62,3 +62,5 @@ SVM (Support Vector Machine) 向量分類器
   靠近線的點為支持向量
   
 <img src="SVM_demo_08.png"/>
+
+- 支持向量公式 https://developer.aliyun.com/article/655112
