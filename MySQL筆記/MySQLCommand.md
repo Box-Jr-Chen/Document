@@ -32,6 +32,8 @@
     
 ### 修改單一column 型態
     ALTER TABLE [database.table] MODIFY [column] INTEGER;
+### 修改單一column 型態並自動累加
+    ALTER TABLE [database.table] MODIFY [column] NOT NULL AUTO_INCREMENT;
 
 ### 新增外鍵
 
