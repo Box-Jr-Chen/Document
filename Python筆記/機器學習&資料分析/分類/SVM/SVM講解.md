@@ -61,11 +61,16 @@ SVM (Support Vector Machine) 向量分類器
    
 ### 支持向量
 
-  靠近線的點為支持向量
+  - 靠近線的點為支持向量。
+  
+  - 分離超平面0 兩類點，其中一類在上面，另一類就在下面。
   
 <img src="SVM_demo_08.png"/>
 
 - 支持向量公式 https://developer.aliyun.com/article/655112
+
+
+
 
 
 <img src="SVM_demo_09.png"/>
@@ -76,3 +81,6 @@ SVM (Support Vector Machine) 向量分類器
 
 
 ### 拉格朗日程子法
+
+
+- https://www.youtube.com/watch?v=Es8Ybz501bo&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=105&t=10m
