@@ -4,6 +4,16 @@
     SELECT * from wmt2.tool_location  where xxx1 <> 'nc1' and xxx2 = '0'; 
 
 
+### 多重更新 
+    UPDATE wmt2.tool_location
+    SET  location = CASE WHEN holder = 'th011'     THEN '1'
+                         WHEN holder = 'th012'     THEN '3'
+                         WHEN holder = 'th013'     THEN '6'
+                   END
+        ,pallet = 'P000002'
+        ,equip = 'wh1'
+    WHERE holder IN ('th011','th012','th013');
+
 ### 安全模式解除
     //解除
     SET SQL_SAFE_UPDATES=0;
