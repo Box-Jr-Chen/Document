@@ -1,5 +1,8 @@
 # MySQLCommand
 
+### 選擇 方法
+SELECT * from wmt2.tool_location  where xxx1 <> 'nc1' and xxx2 = '0'; 
+
 
 ### 安全模式解除
     //解除
