@@ -22,6 +22,9 @@
     
 ### 將table的名字做修改
     RENAME TABLE db_a.old_table TO db_b.new_table;
+    
+### 將table的某個列清除  
+    DELETE FROM `wmt2`.`wh_process` WHERE (`ID` = '20210308203336');
 ### 將table的資料全部清除  
 
     DELETE FROM [database.table];
