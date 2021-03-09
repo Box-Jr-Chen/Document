@@ -14,6 +14,17 @@
         JOIN wmt2.tool_maxlife
             ON tool_type.type = tool_maxlife.type;
 
+### 選擇 方法 多重表單_2
+        SELECT
+          tool_main.holder,
+          tool_type.short,
+          tool_maxlife.maxlife
+        FROM wmt2.tool_main
+        Left JOIN wmt2.tool_type
+          ON tool_type.type = tool_main.type
+        Left  JOIN wmt2.tool_maxlife
+          ON tool_type.type = tool_maxlife.type;
+
 ### 多重更新 
     UPDATE wmt2.tool_location
     SET  location = CASE WHEN holder = 'th011'     THEN '1'
