@@ -3,6 +3,16 @@
 ### 選擇 方法
     SELECT * from wmt2.tool_location  where xxx1 <> 'nc1' and xxx2 = '0'; 
 
+### 選擇 方法 多重表單
+       SELECT
+            tool_main.holder,
+            tool_type.short,
+            tool_maxlife.maxlife
+        FROM wmt2.tool_type
+        JOIN wmt2.tool_main
+          　ON tool_type.type = tool_main.type
+        JOIN wmt2.tool_maxlife
+            ON tool_type.type = tool_maxlife.type;
 
 ### 多重更新 
     UPDATE wmt2.tool_location
