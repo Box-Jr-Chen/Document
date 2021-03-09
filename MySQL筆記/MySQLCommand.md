@@ -51,6 +51,9 @@
 ### 修改單一column 型態並自動累加
     ALTER TABLE [database.table] MODIFY [column] NOT NULL AUTO_INCREMENT;
 
+### 從別的資料庫裡複製表單
+    CREATE TABLE DB2.table SELECT * FROM DB1.table;
+
 ### 新增外鍵
 
     https://www.fooish.com/sql/foreign-key-constraint.html
