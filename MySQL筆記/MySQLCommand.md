@@ -25,6 +25,13 @@
         Left  JOIN wmt2.tool_maxlife
           ON tool_type.type = tool_maxlife.type;
 
+
+### 插入判斷　－　判斷是否有值
+    INSERT INTO wmt2.tool_type (short) 
+      SELECT 'N10.M3.Z2.K7.L0.60.50.40.30.20.20' FROM DUAL
+    WHERE NOT EXISTS 
+      (SELECT short FROM wmt2.tool_type WHERE short='N10.M3.Z2.K7.L0.60.50.40.30.20.20')LIMIT 1;
+
 ### 多重更新 
     UPDATE wmt2.tool_location
     SET  location = CASE WHEN holder = 'th011'     THEN '1'
