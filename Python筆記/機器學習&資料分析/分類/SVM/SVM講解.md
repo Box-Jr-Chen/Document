@@ -85,3 +85,37 @@ SVM (Support Vector Machine) 向量分類器
 
 
 - https://www.youtube.com/watch?v=Es8Ybz501bo&list=PLwDQt7s1o9J65aQ6HYN4LaqRkX8ncKG1D&index=105&t=10m
+
+
+### 結論
+
+ - SVC 線性劃分 
+
+    wx+b = 0  分類器 
+    
+    wx+b = 1  上邊界 
+    
+    wx+b =-1  下邊界 
+
+    邊界上的點 就是支持向量
+    
+    其餘所有的點帶入方城，大於1 或是小於-1
+    
+    絕對值越大說明分的越開
+
+  
+   - SVC 非線性劃分 :
+            一三象限一類點
+            二四象限一類點
+            線性不可分的一三象限點，從屏幕長出來
+            二四象限點凹進去
+            屏幕相當於'分離超平面'
+            
+   - SVC 回歸 :
+          a.線性
+          b.多項式
+          c.徑向基 rbf 高斯核
+          d.預測數據範圍不是無限預測
+          
+   - SVC 實現人臉識別 :    
+          PCA降維，數據屬性變少，
