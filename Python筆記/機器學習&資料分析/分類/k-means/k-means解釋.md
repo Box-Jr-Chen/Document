@@ -11,3 +11,10 @@
 - 步驟圖。
 
 <img src='K-means_03.png' />
+
+
+<img src='K-means_04.png' />
+
+- 缺點:
+  a. 如何分類?
+  b. 評價標準? 
