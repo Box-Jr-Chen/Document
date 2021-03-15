@@ -31,7 +31,11 @@
       SELECT 'N10.M3.Z2.K7.L0.60.50.40.30.20.20' FROM DUAL
     WHERE NOT EXISTS 
       (SELECT short FROM wmt2.tool_type WHERE short='N10.M3.Z2.K7.L0.60.50.40.30.20.20')LIMIT 1;
+###插入資料
 
+    INSERT INTO wmt2.type_toolholder_shank (code,description)
+        values('T1','面銑刀'),('T2','端銑刀'),('T3','鑽頭'),('T4','精密搪刀'),('T5','攻牙刀');
+        
 ### 多重更新 
     UPDATE wmt2.tool_location
     SET  location = CASE WHEN holder = 'th011'     THEN '1'
