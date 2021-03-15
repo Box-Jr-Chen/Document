@@ -7,3 +7,7 @@
 - 歐式距離。
 
 <img src='K-means_02.png' />
+
+- 步驟圖。
+
+<img src='K-means_03.png' />
