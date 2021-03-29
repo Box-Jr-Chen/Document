@@ -73,7 +73,8 @@
 
     ALTER TABLE [database.table] ADD COLUMN [column] int AFTER [old_column];
     
-    
+### 刪除一個column 在已有的資料表    
+    ALTER TABLE [database.table] DROP  [column];   
     
 ### 修改單一column 名字
     ALTER TABLE [database.table] RENAME COLUMN [column_old] TO [column];
