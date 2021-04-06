@@ -74,14 +74,22 @@ https://www.cupoy.com/marathon-mission/00000174C4BC1B93000000016375706F795F70726
 ## 抽樣分配
 
 - t 分配
-- 
+
+  1.學生t-分配(Student's t-distribution) 可簡稱為 t 分配。
+
+  2.應用於在母體標準差(σ)未知的情況下，不論樣本數量大或小皆可應用學生 t 分配估計呈常態分布且變異數未知的總體的平均值。
+
+
+  假設 X 是常態分配的隨機變數，平均數為 μ，標準差為 σ，抽出 X1,...,Xn 服從 X~N(μ,σ2)
+
+
 - 卡方分配
 
   1.卡方分配是標準常態的變形，Z 為標準常態分配，Z 的平方為自由度為 1 的卡方分配 →`Z~N(0,1), Y = Z2, Y~X2(1)`
    
   2.卡方分配具有以下特性：
  
-  <img width='400px' style='position:left' src='卡方檢定_01.png'/>
+  <img width='500px' style='position:left' src='卡方檢定_01.png'/>
     
 
 - F 分配
