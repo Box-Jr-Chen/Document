@@ -81,7 +81,7 @@ https://www.cupoy.com/marathon-mission/00000174C4BC1B93000000016375706F795F70726
    
   2.卡方分配具有以下特性：
  
-  <img style='position:left' src='卡方檢定_01.png'/>
+  <img width='200px' style='position:left' src='卡方檢定_01.png'/>
     
 
 - F 分配
