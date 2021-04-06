@@ -207,8 +207,17 @@
       
 
       
+ ex:
+ 
+     df [df ['col1'] =='val1'＆df ['col2'] =='val2']]
+     
+     
+使用`filter` : 
 
-
+      df.filter(items=["col1","col2"])
+      
+      df.filter(like="bbi",axis=0)
+      
 ### 分析流程
 
 1. 資料收集
