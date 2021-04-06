@@ -82,6 +82,7 @@ https://www.cupoy.com/marathon-mission/00000174C4BC1B93000000016375706F795F70726
 
   假設 X 是常態分配的隨機變數，平均數為 μ，標準差為 σ，抽出 X1,...,Xn 服從 X~N(μ,σ2)
 
+  <img width='500px' style='position:left' src='t檢定_01.png'/>
 
 - 卡方分配
 
