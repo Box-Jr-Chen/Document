@@ -10,6 +10,8 @@
 
 函式:
 
+  <img src="積分函式_01.png"/>
+
     def f(x):
         return  (gamma(99.5)/( pow(198*3.1415,0.5) * gamma(99)))*pow((1 + (pow(x, 2)/198)),-99.5)
 
