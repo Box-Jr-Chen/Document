@@ -25,6 +25,9 @@
         Left  JOIN wmt2.tool_maxlife
           ON tool_type.type = tool_maxlife.type;
 
+### 選擇 多重選項
+
+        SELECT * FROM   wmt2.tool_main where tool_main.holder=any(SELECT holder FROM wmt2.tool_location where tool_location.pallet='P000001');
 
 ### 插入判斷　－　判斷是否有值
     INSERT INTO wmt2.tool_type (short) 
