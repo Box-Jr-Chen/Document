@@ -17,8 +17,16 @@
       },
 
 
-- 'npm install mongoose'   安裝mongoose
+- `npm install mongoose`   安裝mongoose
 
+上mlab  https://mlab.com/home?newLogin=1
+
+`Create new` 新增資料庫 
+
+`rest` 環境名稱
+`testdy` 資料庫名稱
+
+- `npm install dotenv`   安裝dotenv
 
 -----------------------------------------
 
