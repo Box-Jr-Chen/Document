@@ -10,3 +10,19 @@
       "scripts": {
         "start":"nodemon app.js"
       },
+
+-----------------------------------------
+
+新增‵app.js`
+
+- 基本API
+
+      const express = require('express');
+
+      const app =express();
+
+      app.get('/',(req,res)=>{
+          res.send('We are on home');
+      });
+
+      app.listen(3000);
