@@ -19,7 +19,7 @@
 
 - `npm install mongoose`   安裝mongoose
 
-上mlab  https://mlab.com/home?newLogin=1
+上mlab  https://cloud.mongodb.com/
 
 `Create new` 新增資料庫 
 
