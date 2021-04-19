@@ -49,4 +49,4 @@
       
       
       
-youtube :https://www.youtube.com/watch?v=vjf774RKrLc
+youtube :https://www.youtube.com/watch?v=vjf774RKrLc&t=16m47s
