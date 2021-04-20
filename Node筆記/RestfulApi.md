@@ -26,11 +26,12 @@
 `rest` Clusters名稱
 `testdy` 資料庫名稱
 
-點選Clusters->Cluster0(自己的叢集)-> `CONNECT` --> `Connect yout application'，把url複製
+點選Clusters->Cluster0(自己的叢集)-> `CONNECT` --> `Connect yout application`，把url複製
 
 
-- `npm install dotenv`   安裝dotenv
+- `npm install dotenv`        安裝dotenv
 
+- `npm install body-parser`   安裝body-parser
 -----------------------------------------
 
 新增‵app.js`
