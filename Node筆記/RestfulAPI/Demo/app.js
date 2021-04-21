@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
 
 //Connect to DB
 mongoose.connect(
-    'mongodb+srv://box:BOXBOX0932621863box@cluster0.vm2py.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+    'mongodb+srv://xxx:xxxx@xxx.xxx.mongodb.net/xxxx',
     {useNewUrlParser:true},()=>{
     console.log('connected to DB');
 })
