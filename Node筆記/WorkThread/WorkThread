@@ -1,0 +1,14 @@
+1.工作者（線程）對於執行CPU密集型JavaScript操作非常有用。
+
+2.他們對I / O密集型工作沒有太大幫助。 Node.js內置的異步I / O操作比Workers的效率更高。
+
+3.與child_process或cluster不同，worker_threads可以共享內存。
+  它們通過傳輸ArrayBuffer實例或共享SharedArrayBuffer實例來實現。
+
+
+
+  npm install inquirer
+
+  npm i ora
+
+  https://www.youtube.com/watch?v=eFJ7Q03jEVY&t=12m25s
