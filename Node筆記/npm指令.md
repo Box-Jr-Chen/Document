@@ -5,20 +5,20 @@ npm 指令
 
 - Node.js 更新
 
-
-    npm cache clean -f
-    npm install -g n
+     `npm cache clean -f`
+     
+     `npm install -g n`
  
 若要更新到最後一個版本
-    n latest
+    `n latest`
  
  若要更新到穩定版本
-    n stable
+    `n stable`
  
 檢查一下
-    node -v
+    `node -v`
     
     
 - Node.js 更新
 
-    npm install -g npm 
+    `npm install -g npm`
