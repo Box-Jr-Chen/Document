@@ -6,9 +6,6 @@
   它們通過傳輸ArrayBuffer實例或共享SharedArrayBuffer實例來實現。
 
 
-
   npm install inquirer
 
   npm i ora
-
-  https://www.youtube.com/watch?v=eFJ7Q03jEVY&t=12m25s
