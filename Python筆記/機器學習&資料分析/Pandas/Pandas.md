@@ -217,7 +217,25 @@
       df.filter(items=["col1","col2"])
       
       df.filter(like="bbi",axis=0)
-      
+
+處理缺失值 : 
+
+-參考 https://blog.csdn.net/dss_dssssd/article/details/82814673
+
+option 1： 去掉含有缺失值的样本（行）
+
+          `DataFrame.dropna()`
+          
+          `DataFrame.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)`
+        
+option 2：将含有缺失值的列（特征向量）去掉
+
+          `DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')`
+
+option 3：将缺失值用某些值填充（0，平均值，中值等）
+
+          `DataFrame.fillna(value=None, method=None, axis=None, inplace=False, limit=None, downcast=None, **kwargs)`
+
 ### 分析流程
 
 1. 資料收集
