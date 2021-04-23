@@ -1,0 +1,20 @@
+https://pm2.keymetrics.io/docs/usage/quick-start/
+
+
+
+PM2 Install - npm install pm2@latest -g
+
+
+ npx pm2 start app.js
+ npx pm2 reload app.js
+
+ npx pm2 stop app.js
+ npx pm2 delete app.js
+
+
+# cluster
+
+ npx pm2 start app.js -i 3
+
+ npx pm2 scale app.js +3
+ npx pm2 scale app.js 3

@@ -1,0 +1,5 @@
+VS Code install 'REST Client'
+
+npm install -g loadtest
+
+loadtest -n 1000 -c 100 http://localhost:3000
