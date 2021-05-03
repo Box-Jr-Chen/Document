@@ -236,6 +236,15 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
 
           `DataFrame.fillna(value=None, method=None, axis=None, inplace=False, limit=None, downcast=None, **kwargs)`
 
+### 分類資料
+
+文字轉數字
+
+          `sex_mapping = {
+                     'male': 1,
+                     'female': 0}
+            complete_data['Sex1'] = complete_data['Sex'].map(sex_mapping)`
+
 ### 分析流程
 
 1. 資料收集
