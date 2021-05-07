@@ -240,15 +240,15 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
 
 文字轉數字
 
-          `sex_mapping = {
+          sex_mapping = {
                      'male': 1,
                      'female': 0}
-            complete_data['Sex1'] = complete_data['Sex'].map(sex_mapping)`
+            complete_data['Sex1'] = complete_data['Sex'].map(sex_mapping)
 
 
 是否為空值
 
-          `df.isna()`
+          df.isna()
 
 
 ### Pandas 索引
