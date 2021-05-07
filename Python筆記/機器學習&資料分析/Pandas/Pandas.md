@@ -250,6 +250,11 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
 
           `df.isna()`
 
+
+### Pandas 索引
+   
+   https://ithelp.ithome.com.tw/articles/10194006
+
 ### 分析流程
 
 1. 資料收集
