@@ -254,6 +254,19 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
 ### Pandas 索引
    
    https://ithelp.ithome.com.tw/articles/10194006
+   
+   
+### 將內部相同資料做sum 處理
+
+     # 以"ObservationDate" 為群組整合，並獲得["Confirmed","Active_case","Recovered","Deaths"] 資料 
+     # 用sum做"ObservationDate"內相同資料合併起來
+     # reset_index 重新排列
+     # sort_values 排列  ascending = True從first 開始
+    data.groupby(["ObservationDate"])[["Confirmed","Active_case","Recovered","Deaths"]]
+      .sum()
+      .reset_index()
+      .sort_values("ObservationDate",ascending=True)
+      .reset_index(drop=True)
 
 ### 分析流程
 
