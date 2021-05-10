@@ -251,6 +251,16 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
           df.isna()
 
 
+分類
+
+        st = ['a','a','b','c','c']
+
+        ss = pd.Categorical(st)
+
+        ss
+        [a, a, b, c, c]
+        Categories (3, object): [a, b, c]
+
 ### 替代
 
     ratings_ages = {
