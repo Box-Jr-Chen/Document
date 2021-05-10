@@ -156,6 +156,8 @@
     
     `pd.nunique()` nuinque()是查看该序列(axis=0/1对应着列或行)的不同值的数量。用这个函数可以查看数据有多少个不同值。
 
+    `pd.shape`  形狀
+
  - 使用 pandas-profiling 
    
     `andas-profiling` 能够使用DataFrame自動生成詳細的數據報告，
@@ -281,7 +283,16 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
     }
     df['target_ages'] = df['rating'].replace(ratings_ages)
  
+### 合併
 
+    dl=[]
+    
+     dl.append=[df1,df2,df2]  # 放入3張表單
+     
+     pd.concat([df1,df2,df3],axis=0) # 合併 橫的
+     
+     pd.concat([df1,df2,df3],axis=1) # 合併 直的
+     
 ### Pandas 索引
    
    https://ithelp.ithome.com.tw/articles/10194006
