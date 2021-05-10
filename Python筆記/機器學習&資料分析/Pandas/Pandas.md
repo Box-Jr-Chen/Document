@@ -152,7 +152,9 @@
 
 ### 資訊
 
-    `pd.describe()`
+    `pd.describe()`  資料描述
+    
+    `pd.nunique()` nuinque()是查看该序列(axis=0/1对应着列或行)的不同值的数量。用这个函数可以查看数据有多少个不同值。
 
  - 使用 pandas-profiling 
    
@@ -171,6 +173,9 @@
     `fr = pandas_profiling.ProfileReport(data)`
     
     `pfr.to_file('report.html')` 生成網頁
+    
+
+
 
 ### 篩選資料
 
