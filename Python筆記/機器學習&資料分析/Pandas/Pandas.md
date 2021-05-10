@@ -251,6 +251,27 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
           df.isna()
 
 
+### 替代
+
+    ratings_ages = {
+        'TV-PG': 'Older Kids',
+        'TV-MA': 'Adults',
+        'TV-Y7-FV': 'Older Kids',
+        'TV-Y7': 'Older Kids',
+        'TV-14': 'Teens',
+        'R': 'Adults',
+        'TV-Y': 'Kids',
+        'NR': 'Adults',
+        'PG-13': 'Teens',
+        'TV-G': 'Kids',
+        'PG': 'Older Kids',
+        'G': 'Kids',
+        'UR': 'Adults',
+        'NC-17': 'Adults'
+    }
+    df['target_ages'] = df['rating'].replace(ratings_ages)
+ 
+
 ### Pandas 索引
    
    https://ithelp.ithome.com.tw/articles/10194006
