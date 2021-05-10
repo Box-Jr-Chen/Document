@@ -173,8 +173,9 @@
 用來處理有資料及索引、列索引與欄標籤的三維資料集
 
 
+### 資訊
 
-
+    pd.describe()
 
 
 ### 篩選資料
@@ -218,7 +219,7 @@
       
       df.filter(like="bbi",axis=0)
 
-處理缺失值 : 
+### 處理缺失值 
 
 -參考 https://blog.csdn.net/dss_dssssd/article/details/82814673
 
