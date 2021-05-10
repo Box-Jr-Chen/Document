@@ -36,29 +36,6 @@
     data.index #索引
     data.values #值
     data.head() #頭
-    data.tail() #尾巴
-    data.pow(2) #函數計算數據幀和其他逐元素(二進製運算符pow)的指數冪
-    
-    計算各值的數量: data.value_counts()
-    ex
-    def count_suffix(li):
-        return Series([l.split('.')[-1] for l in li]).value_counts()
-    #可以取文件後副檔名的量
-    
-    
-    
-    data.astype(np.int8) # 轉變type to int
-    data.astype(np.uint8) # 轉變type to uint
-    
-    
-    
-    data.isnull()# 返回各值是否為空值
-    ex:  
-        cond = data.isnull()
-        s[cond] # 空值取出
-  
-    data.notnull()# 返回各值是否不為空值
-    ex:  
         cond = data.isnull()
         s[cond] # 空值取出
   
@@ -175,8 +152,25 @@
 
 ### 資訊
 
-    pd.describe()
+    `pd.describe()`
 
+ - 使用 pandas-profiling 
+   
+    `andas-profiling` 能够使用DataFrame自動生成詳細的數據報告，
+    
+    其中包括Dataset基本資訊、變數型態、欄位警告(常數、相依)、變數分析(統計、分布、極值)，
+    
+    比起Describe 要詳細許多。
+    
+    `pip install pandas_profiling`
+    
+    `import pandas_profiling`
+    
+    `pandas_profiling.ProfileReport(data)`
+    
+    `fr = pandas_profiling.ProfileReport(data)`
+    
+    `pfr.to_file('report.html')` 生成網頁
 
 ### 篩選資料
 
@@ -269,12 +263,7 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
       .sort_values("ObservationDate",ascending=True)
       .reset_index(drop=True)
 
-### 分析流程
 
-1. 資料收集
 
-2. 清理資料
 
-3. 分析資料
 
-4. 資料的應用
