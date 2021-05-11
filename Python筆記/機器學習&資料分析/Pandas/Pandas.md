@@ -290,6 +290,15 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
     }
     df['target_ages'] = df['rating'].replace(ratings_ages)
  
+ 
+ 使用 LabelEncoder
+ 
+     from sklearn.preprocessing import LabelEncoder
+
+     labelencoder = LabelEncoder()
+
+     df_main_use_Taipei['towns'] = labelencoder.fit_transform(df_main_use_Taipei['towns'])
+ 
 ### 合併
 
     dl=[]
