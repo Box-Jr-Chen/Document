@@ -299,6 +299,8 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
 
      df_main_use_Taipei['towns'] = labelencoder.fit_transform(df_main_use_Taipei['towns'])
  
+    list(df_main_use_Taipei.inverse_transform(df)) #反編碼
+ 
 ### 合併
 
     dl=[]
