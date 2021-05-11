@@ -262,6 +262,13 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
         ss
         [a, a, b, c, c]
         Categories (3, object): [a, b, c]
+        
+        
+ 將column 內資料轉成群組數字
+ 
+      df = pd.DataFrame(df_main_use_Taipei,columns=['towns'])
+      status_dict = df_main_use_Taipei['towns'].unique().tolist() # 變成矩陣
+      df_main_use_Taipei['towns'] =  df_main_use_Taipei['towns'].apply(lambda x: status_dict.index(x))
 
 ### 替代
 
