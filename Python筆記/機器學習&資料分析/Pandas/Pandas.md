@@ -310,7 +310,27 @@ option 3：将缺失值用某些值填充（0，平均值，中值等）
      pd.concat([df1,df2,df3],axis=0) # 合併 橫的
      
      pd.concat([df1,df2,df3],axis=1) # 合併 直的
+   
+    
+   - 交叉列表取值
+   
+     範例:
      
+         a = np.array(["foo", "foo", "foo", "foo", "bar", "bar","bar", "bar", "foo", "foo", "foo"], dtype=object)
+         b = np.array(["one", "one", "one", "two", "one", "one","one", "two", "two", "two", "one"], dtype=object)
+         c = np.array(["dull", "dull", "shiny", "dull", "dull", "shiny","shiny", "dull", "shiny", "shiny", "shiny"],dtype=object)
+         
+         pd.crosstab(a, [b, c], rownames=['a'], colnames=['b', 'c'])
+         
+         export:
+         
+         b   one        two
+         c   dull shiny dull shiny
+         a
+         bar    1     2    1     0
+         foo    2     2    1     2
+
+   
 ### Pandas 索引
    
    https://ithelp.ithome.com.tw/articles/10194006
