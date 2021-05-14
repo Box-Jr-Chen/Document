@@ -9,9 +9,15 @@
 
 # 內容
 
-- 參數定義
+- 名詞定義
 
-  1.T-Value :
+  1.T-Value : 
+     
+     a. 計算兩者間的關係。
+     
+     b. 計算公式:
+     
+      <img src="formula_T-Value.png">
 
   2.P-Value : 
      a.在分佈常態分佈下≥t值的`機率密度值(probability density value，P(x≥t))`。
@@ -20,6 +26,7 @@
      
      <img src="p-value.png">
 
+  3.自由度 :
 
 -參考 
 
