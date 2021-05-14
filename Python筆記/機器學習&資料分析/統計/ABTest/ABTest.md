@@ -24,7 +24,7 @@
 
        n = 樣本數。
 
-       <img src="formula_T-Value.png">
+     <img src="formula_T-Value.png">
      
      
      c. t值越接近0，兩組之間越沒有差異，t值越遠離0則兩組差異越大。
@@ -34,7 +34,6 @@
   2.P-Value : 
   
      a.在分佈常態分佈下≥t值的`機率密度值(probability density value，P(x≥t))`。
-     
      
      b.p值是下圖紅色區域的面積值(從黑色線的位置t積分到無窮大)，BTW整個分佈的面積值等於1(從負無窮大積分到無窮大)。
      
