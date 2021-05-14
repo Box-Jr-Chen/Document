@@ -22,6 +22,8 @@
      
      S = 標準差。
      
+     n = 樣本數。
+     
      <img src="formula_T-Value.png">
      
      
