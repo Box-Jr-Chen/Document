@@ -16,7 +16,11 @@
      a. 計算兩者間的關係。
      
      
-     b. 計算公式:
+     b. 計算公式: 
+     
+     X = 平均數。
+     
+     S = 標準差。
      
      <img src="formula_T-Value.png">
      
