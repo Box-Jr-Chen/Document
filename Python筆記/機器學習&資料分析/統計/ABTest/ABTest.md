@@ -3,7 +3,7 @@
 
 ## A/B test 的 5 步驟
 
-<img src="goal.jpg">
+<img src="goal.png">
 
 
 
