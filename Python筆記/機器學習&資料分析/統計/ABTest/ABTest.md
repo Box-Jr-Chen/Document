@@ -1,6 +1,13 @@
 #  A/B Test
 
 
+## A/B test 的 5 步驟
+
+<img src="goal.jpg">
+
+
+
+
 -參考 
 
 https://www.cupoy.com/marathon-mission/00000174C4BC1B93000000016375706F795F70726572656C656173654355/000001755460C9F5000000076375706F795F72656C656173654349/
