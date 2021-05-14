@@ -18,13 +18,13 @@
      
      b. 計算公式: 
      
-     X = 平均數。
-     
-     S = 標準差。
-     
-     n = 樣本數。
-     
-     <img src="formula_T-Value.png">
+       X = 平均數。
+
+       S = 標準差。
+
+       n = 樣本數。
+
+       <img src="formula_T-Value.png">
      
      
      c. t值越接近0，兩組之間越沒有差異，t值越遠離0則兩組差異越大。
