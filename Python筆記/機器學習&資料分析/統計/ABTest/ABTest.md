@@ -17,7 +17,7 @@
      
      b. 計算公式:
      
-      <img src="formula_T-Value.png">
+     <img src="formula_T-Value.png">
 
   2.P-Value : 
      a.在分佈常態分佈下≥t值的`機率密度值(probability density value，P(x≥t))`。
