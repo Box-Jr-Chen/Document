@@ -11,14 +11,14 @@
 
 - 參數定義
 
-  1.P-Value : 
+  1.T-Value :
+
+  2.P-Value : 
      a.在分佈常態分佈下≥t值的`機率密度值(probability density value，P(x≥t))`。
      
      b.p值是下圖紅色區域的面積值(從黑色線的位置t積分到無窮大)，BTW整個分佈的面積值等於1(從負無窮大積分到無窮大)。
      
      <img src="p-value.png">
-
-  2.T-Value :
 
 
 -參考 
