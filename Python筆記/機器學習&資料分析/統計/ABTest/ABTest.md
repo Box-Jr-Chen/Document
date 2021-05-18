@@ -11,7 +11,7 @@
 ## 名詞定義
 
 
-  - <img src="http://chart.googleapis.com/cht=tx&chl=\alpha" style="border:none;"> :顯著水準(significance level)
+  - <img src="http://chart.googleapis.com/chart?cht=tx&chl=\alpha" style="border:none;"> :顯著水準(significance level)
 
   -  z-score :標準分數 
   
