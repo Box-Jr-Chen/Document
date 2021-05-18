@@ -118,9 +118,11 @@ Q2: 一位速食店店長認為其品牌在市場之佔有率至多為12%，於�
   其樣本平均<img src="http://chart.googleapis.com/chart?cht=tx&chl=\bar{x} = \frac{X_1+...+X_n}{n} " style="border:none;">減掉平均數<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mu" style="border:none;">
   再除以標準差<img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{\sigma}{\sqrt(n)}" style="border:none;">，將會趨近平均數為0，標準差為1 的常態分佈(normal distribution)。
   
+  
+ <img src="center_1.gif">
 
 
-
+ <img src="center_2.gif">
 ### 檢定
 
 -參考
