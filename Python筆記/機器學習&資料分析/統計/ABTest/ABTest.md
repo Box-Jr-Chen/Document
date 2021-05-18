@@ -12,14 +12,12 @@
 <img src="goal.png">
 
 
-
-
 ## 名詞定義
 
 
-  - <img src="http://chart.googleapis.com/chart?cht=tx&chl=\alpha" style="border:none;"> :顯著水準(significance level)
+  - **<img src="http://chart.googleapis.com/chart?cht=tx&chl=\alpha" style="border:none;"> :** 顯著水準(significance level)
 
-  -  z-score :標準分數 
+  -  **z-score  :** 標準分數 
   
    統計學中是一種無因次值，
     
@@ -32,7 +30,7 @@
 
    <img src="z-score.png">
 
-  -  T-Value : 
+  -  **T-Value :**
      
    1. 計算兩者間的關係。
      
@@ -52,7 +50,7 @@
 
 
 
-  - P-Value : 
+  - **P-Value :** 
   
    1. 在分佈常態分佈下≥t值的`機率密度值(probability density value，P(x≥t))`。
      
@@ -61,12 +59,10 @@
    <img src="p-value.png" />
      
 
-  - 自由度(df) :
+  - **自由度(df) :**  
     
     1. 自由度越大(基本上等於樣本數越大)。
  
-
-
 
 ## 內容
 
