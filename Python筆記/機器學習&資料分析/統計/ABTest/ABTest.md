@@ -24,7 +24,7 @@
 
     c.   n = 樣本數。
 
-     <img src="formula_T-Value.png">
+   <img src="formula_T-Value.png">
      
      
    3. t值越接近0，兩組之間越沒有差異，t值越遠離0則兩組差異越大。
@@ -37,7 +37,7 @@
      
    2. p值是下圖紅色區域的面積值(從黑色線的位置t積分到無窮大)，BTW整個分佈的面積值等於1(從負無窮大積分到無窮大)。
      
-     <img src="p-value.png" />
+   <img src="p-value.png" />
      
 
   - 自由度(df) :
