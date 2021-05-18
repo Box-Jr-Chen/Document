@@ -10,6 +10,8 @@
 
 ## 名詞定義
 
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mu" style="border:none;"> 
+
   - <img src="http://chart.googleapis.com/chart?cht=\alpha" style="border:none;"> :顯著水準(significance level)
 
   -  z-score :標準分數 
