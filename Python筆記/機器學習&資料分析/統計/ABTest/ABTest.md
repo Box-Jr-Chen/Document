@@ -1,7 +1,6 @@
 
 #  A/B Test
 
-
 ## A/B test 的 5 步驟
 
 <img src="goal.png">
@@ -112,8 +111,13 @@ Q2: 一位速食店店長認為其品牌在市場之佔有率至多為12%，於�
 - 解釋 :  
 
 
-  1.主要是指從平均數為$\u ，標準差為 $\delta$ 的母體中，隨機地抽取大小為  的獨立樣本 。當樣本數  很大時，其樣本平均  減掉平均數  再除以標準差 ，將會趨近平均數為0，標準差為1 的常態分佈(normal distribution)。
-  2.
+  1.主要是指從平均數為<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mu" style="border:none;"> ，
+  標準差為 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\sigma" style="border:none;">的母體中，
+  隨機地抽取大小為<img src="http://chart.googleapis.com/chart?cht=tx&chl=n" style="border:none;">的獨立樣本<img src="http://chart.googleapis.com/chart?cht=tx&chl=X_1,...,X_n" style="border:none;">。
+  當樣本數<img src="http://chart.googleapis.com/chart?cht=tx&chl=n" style="border:none;">很大時，
+  其樣本平均<img src="http://chart.googleapis.com/chart?cht=tx&chl=\bar{x} = \frac{X_1+...+X_n}{n} " style="border:none;">減掉平均數<img src="http://chart.googleapis.com/chart?cht=tx&chl=\mu" style="border:none;">
+  再除以標準差<img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{\sigma}{\sqrt(n)}" style="border:none;">，將會趨近平均數為0，標準差為1 的常態分佈(normal distribution)。
+  
 
 
 
