@@ -6,7 +6,8 @@
 
 - 參考 https://blog.echobind.com/a-guide-for-restful-apis-with-node-sequelize-postgres-63636d026d5d
 
-
+- 參考 https://www.youtube.com/watch?v=oWSN9AQK1RM
+- 
 # 注意步驟(此教學更改檔案)
 
 1. `npx sequelize-cli init` 在window 上使用指定初始。
