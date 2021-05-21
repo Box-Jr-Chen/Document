@@ -51,3 +51,9 @@
       
       
 youtube :https://www.youtube.com/watch?v=vjf774RKrLc&t=16m47s
+
+
+- Get 參數
+
+  `req.query`
+  
