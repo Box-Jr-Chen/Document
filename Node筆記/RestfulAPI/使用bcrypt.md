@@ -6,4 +6,5 @@
 - 使用 :
 
    `const bcrypt = require('bcrypt')`
+   
    `await bcrypt.hash("123456",await bcrypt.genSalt())`
