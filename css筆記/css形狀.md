@@ -20,6 +20,14 @@
         border-bottom: 100px solid red;
       }
       
+      #triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;
+      }
+      
       #triangle-left {
         width: 0;
         height: 0;
