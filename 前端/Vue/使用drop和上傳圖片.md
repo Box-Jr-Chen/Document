@@ -1,5 +1,7 @@
  # 使用drop和上傳圖片      
-       
+   
+  - 參考 https://codepen.io/dcode-software/pen/xxwpLQo (html)
+   
   - Vue File
   
    原始碼(使用label 在用input  可以讓display:none):
